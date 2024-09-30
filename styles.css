@@ -62,35 +62,36 @@ li {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #002b5c; /* Dark blue background */
-    padding: 15px; /* Spacing around the navbar */
+    background: linear-gradient(90deg, #002b5c, #004d7f); /* Navy blue gradient */
+    padding: 15px 30px; /* Padding for spacing */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .nav-item {
-    background-color: #004d7f; /* Lighter blue for nav items */
-    border-radius: 5px; /* Rounded corners for nav items */
+    background-color: #005493; /* Primary button color */
+    border-radius: 5px; /* Rounded corners */
     margin: 0 10px; /* Space between items */
-    padding: 10px 15px; /* Padding inside each item */
+    padding: 10px 20px; /* Button padding */
     text-align: center; /* Center text */
-    transition: background-color 0.3s ease; /* Smooth background change on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
 .nav-item a {
-    color: #ffffff; /* White text for better contrast */
+    color: #ffffff; /* White text for contrast */
     text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
+    font-weight: bold; /* Bold text for emphasis */
 }
 
 .nav-item:hover {
-    background-color: #005493; /* Darker blue on hover */
+    background-color: #0076a8; /* Lighter blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
 }
 
-/* Add media query for responsive design */
+/* Responsive design */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column; /* Stack items on smaller screens */
     }
     .nav-item {
         margin: 5px 0; /* Adjust margin for stacked items */
