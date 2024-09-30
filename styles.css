@@ -59,44 +59,45 @@ ul {
 li {
     margin-bottom: 10px;
 }
+nav {
+    background: linear-gradient(135deg, #002b5c, #004d7f); /* Gradient background */
+    padding: 10px 0; /* Padding for top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
 .navbar {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(90deg, #002b5c, #004d7f); /* Navy blue gradient */
-    padding: 15px 30px; /* Padding for spacing */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center items */
 }
 
-.nav-item {
-    background-color: #005493; /* Primary button color */
+.navbar li {
+    margin: 0 15px; /* Increased margin for more space */
+}
+
+.navbar a {
+    display: block; /* Make the link a block to fill the box */
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px; /* Space around links */
     border-radius: 5px; /* Rounded corners */
-    margin: 0 10px; /* Space between items */
-    padding: 10px 20px; /* Button padding */
-    text-align: center; /* Center text */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
-.nav-item a {
-    color: #ffffff; /* White text for contrast */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text for emphasis */
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Brighter on hover */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
-.nav-item:hover {
-    background-color: #0076a8; /* Lighter blue on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
+/* Optional: To add a border around the whole navbar */
+nav {
+    border-bottom: 2px solid #004d7f; /* Border color for the navbar */
+    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom */
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack items on smaller screens */
-    }
-    .nav-item {
-        margin: 5px 0; /* Adjust margin for stacked items */
-    }
-}
 
 .about-me {
     background-color: #f9f9f9; /* Light gray background */
