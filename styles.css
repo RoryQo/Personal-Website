@@ -59,3 +59,35 @@ ul {
 li {
     margin-bottom: 10px;
 }
+/* Navbar Styles */
+nav {
+    background-color: #f0f4f8; /* Background color of the navbar */
+    padding: 10px 0; /* Padding for top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Space between items */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    display: block; /* Make the link a block to fill the box */
+    background-color: #002b5c; /* Color for the boxes */
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px; /* Space around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.navbar a:hover {
+    background-color: #004d7f; /* Darker shade on hover */
+}
