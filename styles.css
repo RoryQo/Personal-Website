@@ -59,45 +59,27 @@ ul {
 li {
     margin-bottom: 10px;
 }
-nav {
-    background: linear-gradient(135deg, #002b5c, #004d7f); /* Gradient background */
-    padding: 10px 0; /* Padding for top and bottom */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-}
-
 .navbar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center items */
-}
-
-.navbar li {
-    margin: 0 15px; /* Increased margin for more space */
+    background-color: #007bff; /* Blue background color for the navbar */
+    border-bottom: 2px solid #ccc; /* Gray border at the bottom */
+    padding: 10px; /* Padding for the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .navbar a {
-    display: block; /* Make the link a block to fill the box */
-    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px; /* Space around links */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px 20px; /* Padding for links */
+    margin: 0 10px; /* Space between links */
+    border-radius: 5px; /* Rounded corners for link boxes */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Brighter on hover */
-    transform: translateY(-2px); /* Slight lift effect */
+    background-color: #0056b3; /* Darker blue on hover */
 }
-
-/* Optional: To add a border around the whole navbar */
-nav {
-    border-bottom: 2px solid #004d7f; /* Border color for the navbar */
-    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom */
-}
-
 
 .about-me {
     margin: 20px 0; /* Spacing above and below the section */
