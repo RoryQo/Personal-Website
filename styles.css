@@ -127,4 +127,19 @@ li {
     text-decoration: underline; /* Underline on hover */
     color: #002b5c; /* Darker blue on hover */
 }
+.about-me-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center align items vertically */
+}
+
+.about-me p {
+    flex: 1; /* Allow text to take up available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.about-me-image {
+    max-width: 40%; /* Limit image width */
+    border-radius: 8px; /* Rounded corners for the image */
+}
 
