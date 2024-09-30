@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Rory Quinlan's Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rory Quinlan</h1>
+    <div class="contact-info">
+        <p>💻 <a href="https://github.com/Roryqo">GitHub</a> | 
+           🔗 <a href="https://www.linkedin.com/in/rory-quinlan">LinkedIn</a> | 
+           📧 <a href="mailto:RoryQo@gmail.com">RoryQo@gmail.com</a> | 
+           📧 <a href="mailto:RoryQuinlan@pitt.edu">RoryQuinlan@pitt.edu</a>
+        </p>
+    </div>
+
+    <div class="section" id="education">
+        <h2>EDUCATION</h2>
+        <h3>University of Pittsburgh, Pittsburgh, PA</h3>
+        <p><strong>Master of Science in Quantitative Economics</strong><br> Expected: April 2025</p>
+        
+        <h3>University of Pittsburgh, Pittsburgh, PA</h3>
+        <p><strong>Bachelor of Science in Statistics & Economics</strong><br> April 2024<br> M GPA: 3.25 | Dean's List (3 consecutive years)</p>
+    </div>
+
+    <a href="index.html">Back to Table of Contents</a>
+</body>
+</html>
