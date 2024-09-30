@@ -59,7 +59,6 @@ ul {
 li {
     margin-bottom: 10px;
 }
-/* Navbar Styles */
 nav {
     background-color: #f0f4f8; /* Background color of the navbar */
     padding: 10px 0; /* Padding for top and bottom */
@@ -70,12 +69,12 @@ nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: space-around; /* Space between items */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center items */
 }
 
 .navbar li {
-    display: inline;
+    margin: 0 10px; /* Space between sections */
 }
 
 .navbar a {
@@ -91,3 +90,10 @@ nav {
 .navbar a:hover {
     background-color: #004d7f; /* Darker shade on hover */
 }
+
+/* Optional: To add a border around the whole navbar */
+nav {
+    border: 1px solid #002b5c; /* Border color for the navbar */
+    border-radius: 5px; /* Rounded corners for the navbar */
+}
+
