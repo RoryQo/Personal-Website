@@ -112,9 +112,13 @@ nav {
     display: flex; /* Use flexbox for layout */
 }
 
-.about-me-text {
-    flex: 1; /* Allow text to take up available space */
-    margin-right: 20px; /* Space between text and image box */
+.about-me-text-container {
+    background-color: #ffffff; /* Background for the text box */
+    border-radius: 8px; /* Rounded corners for the text box */
+    padding: 20px; /* Padding for the text box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1; /* Allow text box to take up available space */
+    margin-right: 20px; /* Space between text box and image */
 }
 
 .about-me-image-container {
