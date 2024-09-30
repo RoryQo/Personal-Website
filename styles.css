@@ -100,47 +100,36 @@ nav {
 
 
 .about-me {
-    background-color: #f9f9f9; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Spacing inside the box */
-    margin: 20px 0; /* Space above and below */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    margin: 20px 0; /* Spacing above and below the section */
 }
 
 .about-me h2 {
-    color: #002b5c; /* Dark blue for heading */
-    border-bottom: 2px solid #004d7f; /* Lighter blue underline */
-    padding-bottom: 10px; /* Space below heading */
+    color: #002b5c; /* Heading color */
+    margin-bottom: 15px; /* Space below the heading */
 }
 
-.about-me p {
-    margin-bottom: 15px; /* Space between paragraphs */
-    line-height: 1.6; /* Better readability */
-    color: #333; /* Dark gray text */
-}
-
-.about-me a {
-    color: #004d7f; /* Lighter blue for links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text for emphasis */
-}
-
-.about-me a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #002b5c; /* Darker blue on hover */
-}
 .about-me-content {
     display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center align items vertically */
-}
-
-.about-me-image {
-    max-width: 150px; /* Set a smaller width for the image */
-    margin-right: 20px; /* Space between the image and text */
-    border-radius: 8px; /* Rounded corners for the image */
+    justify-content: space-between; /* Space between text and image box */
+    align-items: flex-start; /* Align items at the start */
 }
 
 .about-me p {
     flex: 1; /* Allow text to take up available space */
+    margin-right: 20px; /* Space between text and image box */
 }
+
+.about-me-image-container {
+    background-color: #f0f4f8; /* Light background for the image box */
+    border-radius: 8px; /* Rounded corners for the image box */
+    padding: 10px; /* Padding for the image box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-me-image {
+    max-width: 150px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
 
