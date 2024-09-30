@@ -60,40 +60,40 @@ li {
     margin-bottom: 10px;
 }
 nav {
-    background-color: #f0f4f8; /* Background color of the navbar */
+    background: linear-gradient(135deg, #002b5c, #004d7f); /* Gradient background */
     padding: 10px 0; /* Padding for top and bottom */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 .navbar {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use flexbox for horizontal layout */
+    display: flex; /* Flexbox for horizontal layout */
     justify-content: center; /* Center items */
 }
 
 .navbar li {
-    margin: 0 10px; /* Space between sections */
+    margin: 0 15px; /* Increased margin for more space */
 }
 
 .navbar a {
     display: block; /* Make the link a block to fill the box */
-    background-color: #002b5c; /* Color for the boxes */
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
     color: white;
     text-decoration: none;
-    padding: 14px 20px; /* Space around links */
+    padding: 12px 20px; /* Space around links */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 .navbar a:hover {
-    background-color: #004d7f; /* Darker shade on hover */
+    background-color: rgba(255, 255, 255, 0.3); /* Brighter on hover */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 /* Optional: To add a border around the whole navbar */
 nav {
-    border: 1px solid #002b5c; /* Border color for the navbar */
-    border-radius: 5px; /* Rounded corners for the navbar */
+    border-bottom: 2px solid #004d7f; /* Border color for the navbar */
+    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom */
 }
-
