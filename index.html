@@ -6,56 +6,33 @@
     <title>Rory Quinlan's Resume</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4 {
             color: #333;
         }
         h1 {
-            border-bottom: 3px solid #007BFF;
+            border-bottom: 2px solid #333;
             padding-bottom: 10px;
-            color: #007BFF;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #0056b3;
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        h3, h4 {
-            color: #004085;
-            margin: 10px 0;
         }
         .contact-info {
-            text-align: center;
             margin-bottom: 20px;
-            font-size: 1.1em;
         }
         .section {
             margin-bottom: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
+        .toc {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-radius: 5px;
         }
-        a {
-            color: #007BFF;
+        .toc a {
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
+            color: #00796b;
         }
     </style>
 </head>
@@ -65,11 +42,22 @@
     <div class="contact-info">
         <p>💻 <a href="https://github.com/Roryqo">GitHub</a> | 
            🔗 <a href="https://www.linkedin.com/in/rory-quinlan">LinkedIn</a> | 
-           📧 <a href="mailto:RoryQo@gmail.com">RoryQo@gmail.com</a>
+           📧 RoryQo@gmail.com
         </p>
     </div>
 
-    <div class="section">
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#certifications">CERTIFICATIONS</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="education">
         <h2>EDUCATION</h2>
         <h3>University of Pittsburgh, Pittsburgh, PA</h3>
         <p>Master of Science in Quantitative Economics <br> Expected: April 2025</p>
@@ -79,7 +67,7 @@
         <p>M GPA: 3.25 <br> Dean's list 3 consecutive years</p>
     </div>
 
-    <div class="section">
+    <div class="section" id="experience">
         <h2>EXPERIENCE</h2>
         <h4>University of Pittsburgh, Pittsburgh, PA</h4>
         <p><strong>Peer Financial Educator, Head of Data Analysis Team</strong> <br> August 2022 - Present</p>
@@ -112,49 +100,69 @@
         </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="projects">
         <h2>PROJECTS</h2>
         <h3>Tuition Variation Model, Undergraduate Research Capstone</h3>
         <ul>
-            <li>Developed a predictive model in R to analyze tuition rates for public and private four-year universities in the U.S.</li>
-            <li>Achieved over 85% of variability in tuition rates accounted for, with national ranking identified as the most significant predictor.</li>
-            <li>Constructed a comprehensive linear regression model, employing leave-one-out cross-validation (LOOCV) to validate predictive capabilities.</li>
-            <li>Applied the model to the University of Pittsburgh, revealing that out-of-state students pay approximately $9,000 above expected tuition.</li>
+            <li>Developed a predictive model in R to analyze tuition rates for public and private four-year universities in the U.S., utilizing institutional, quality of life, and crime metrics to explain tuition variability.</li>
+            <li>Achieved over 85% of variability in tuition rates accounted for, with national ranking identified as the most significant predictor, demonstrating that prestigious institutions leverage their rankings to charge higher tuition.</li>
+            <li>Collected data from three public datasets encompassing 60 observations from top U.S. universities, including metrics such as institutional control, national rank, and median income.</li>
+            <li>Constructed a comprehensive linear regression model, employing leave-one-out cross-validation (LOOCV) to validate predictive capabilities and ensuring robustness against overfitting.</li>
+            <li>Conducted thorough data wrangling to clean and prepare datasets, addressing missing values and ensuring appropriate variable encoding.</li>
+            <li>Applied the model to the University of Pittsburgh, revealing that out-of-state students pay approximately $9,000 above expected tuition, highlighting the model's practical applicability for prospective students assessing educational investments.</li>
         </ul>
 
         <h3>CPI Mini Research Capstone</h3>
         <ul>
-            <li>Analyzed the Consumer Price Index (CPI) specifically for college students by evaluating essential products and services they typically consume.</li>
-            <li>Implemented functions to calculate inflation rates based on the custom CPI, facilitating insights into student-related expenses.</li>
+            <li>Analyzed the Consumer Price Index (CPI) specifically for college students by evaluating essential products and services they typically consume, resulting in a custom CPI calculation based on selected items and their respective weights across different U.S. regions</li>
+            <li>Collected price data through API retrieval for three regions (Northeast, Midwest, South) covering a five-year period (January 2017 to January 2022) to support the CPI calculations</li>
+            <li>Implemented functions to calculate inflation rates based on the custom CPI, facilitating insights into the sensitivity of student-related expenses to inflation changes</li>
+            <li>Conducted a comprehensive analysis highlighting that while the custom CPI is less robust than the general CPI, it captures inflation trends that significantly affect college students, particularly for essential items like gas, recreation, and rent</li>
+            <li>Developed a comparative graph visualizing inflation rates of the custom CPI against the general CPI over various lag periods, emphasizing the differing experiences of college students compared to the broader population</li>
         </ul>
 
         <h3>Age Correlation in Married Couples, Bayesian Analysis Project</h3>
         <ul>
-            <li>Analyzed the relationship between the ages of husbands and wives using data from 100 sampled U.S. married couples.</li>
-            <li>Utilized R for data analysis, focusing on visualizing relationships and enhancing the reliability of findings.</li>
+            <li>Analyzed the relationship between the ages of husbands and wives using data from 100 sampled U.S. married couples, aiming to hypothesize a semiconjugate prior.</li>
+            <li>Generated predictive datasets through random sampling from established distributions, confirming a strong positive correlation between the ages.</li>
+            <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient, creating new confidence intervals for both.</li>
+            <li>Demonstrated that the Bayesian approach provided narrower confidence intervals for average ages, reducing them by over a year compared to frequentist methods.</li>
+            <li>Highlighted the advantages of Bayesian methods in estimating correlations, achieving a 2% reduction in the correlation coefficient's confidence interval.</li>
+            <li>Utilized R for data analysis, focusing on visualizing relationships and employing statistical techniques to enhance the reliability of findings on age dynamics in marriages.</li>
         </ul>
 
         <h3>Country Needs Assessment for Humanitarian Aid, Data Science Foundations Project</h3>
         <ul>
-            <li>Analyzed socio-economic and health indicators to categorize countries most in need of humanitarian assistance.</li>
-            <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities.</li>
+            <li>Analyzed socio-economic and health indicators to categorize countries most in need of humanitarian assistance from NGOs.</li>
+            <li>Conducted a correlation analysis and utilized Principal Component Analysis (PCA) to identify key factors affecting country development, including child mortality, income, life expectancy, and health expenditure.</li>
+            <li>Determined three optimal clusters through clustering techniques, finding that Partitioning Around Medoids (PAM) clustering outperformed K-means due to its resilience to outliers.</li>
+            <li>Identified Cluster 1, comprising 51 countries with the most critical needs, highlighting urgent areas for intervention, such as high child mortality and low average income.</li>
+            <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities and underscoring the need for targeted interventions in Cluster 1.</li>
+            <li>Developed an R workflow for data analysis, including loading libraries, performing exploratory data analysis, and executing clustering methods to assess humanitarian needs.</li>
         </ul>
 
         <h3>Credit Risk Assessment Model, Data Science with Python Class Project</h3>
         <ul>
-            <li>Analyzed customer attributes to predict credit risk using logistic regression, enhancing banks' assessment capabilities.</li>
-            <li>Managed data preprocessing and implemented a workflow in Python, utilizing libraries like pandas and scikit-learn.</li>
+            <li>Analyzed customer attributes to predict credit risk using logistic regression, enhancing banks' ability to assess potential credit risks efficiently.</li>
+            <li>Developed a comprehensive model achieving approximately 78% accuracy, allowing early identification of high-risk customers based on readily available information.</li>
+            <li>Utilized two datasets, incorporating features such as age, gender, job type, and credit amount, to train and evaluate the model.</li>
+            <li>Created visualizations, including pie charts and scatterplots, to understand credit risk distributions and relationships among variables effectively.</li>
+            <li>Managed data preprocessing, handling missing values and converting categorical variables to dummy variables to prepare the dataset for analysis.</li>
+            <li>Implemented a workflow in Python, utilizing libraries like pandas and scikit-learn, to conduct exploratory data analysis, visualize results, and train the logistic regression model.</li>
         </ul>
 
         <h3>Students' Adaptability to Online Learning, Data Science with Python Class Project</h3>
         <ul>
-            <li>Investigated students' adaptability to online learning through data wrangling, visualization, and machine learning techniques.</li>
-            <li>Achieved approximately 93% accuracy using advanced machine learning models, including non-linear Support Vector Machine (SVM) and Random Forest.</li>
+            <li>Investigated students' adaptability to online learning by applying data wrangling, visualization, and machine learning techniques to understand key influencing factors and predict adaptability levels.</li>
+            <li>Prepared data by encoding categorical variables, scaling features, and conducting hyperparameter tuning to optimize model performance for accuracy, precision, and recall.</li>
+            <li>Achieved approximately 93% accuracy in predicting adaptability using advanced machine learning models, including non-linear Support Vector Machine (SVM) and Random Forest, outperforming basic models like Naive Bayes.</li>
+            <li>Identified significant factors influencing adaptability, such as age, class duration, gender, and education level, while finding device type and load-shedding to be less influential.</li>
+            <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors, enhancing understanding of student adaptability.</li>
         </ul>
         
     </div>
 
-    <div class="section">
+    <div class="section" id="skills">
         <h2>SKILLS</h2>
         <ul>
             <li>R (coding language)</li>
@@ -167,7 +175,7 @@
         </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="certifications">
         <h2>CERTIFICATIONS</h2>
         <ul>
             <li>Google Advanced Data Analytics (GADA), Google & Coursera - September 2024</li>
