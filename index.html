@@ -135,10 +135,12 @@
         <h2>PROJECTS</h2>
         <h3>Tuition Variation Model, Undergraduate Research Capstone</h3>
         <ul>
-            <li>Developed a predictive model in R analyzing tuition rates for U.S. universities.</li>
-            <li>Achieved 85% variability in tuition rates, with national ranking as the key predictor.</li>
-            <li>Constructed a linear regression model using cross-validation for validation.</li>
-            <li>Applied the model to the University of Pittsburgh, revealing $9,000 in additional tuition for out-of-state students.</li>
+            <li>Developed a predictive model in R to analyze tuition rates for public and private four-year universities in the U.S., utilizing institutional, quality of life, and crime metrics to explain tuition variability.</li>
+            <li>Achieved over 85% of variability in tuition rates accounted for, with national ranking identified as the most significant predictor, demonstrating that prestigious institutions leverage their rankings to charge higher tuition.</li>
+            <li>Collected data from three public datasets encompassing 60 observations from top U.S. universities, including metrics such as institutional control, national rank, and median income.</li>
+            <li>Constructed a comprehensive linear regression model, employing leave-one-out cross-validation (LOOCV) to validate predictive capabilities and ensuring robustness against overfitting.</li>
+            <li>Conducted thorough data wrangling to clean and prepare datasets, addressing missing values and ensuring appropriate variable encoding.</li>
+            <li>Applied the model to the University of Pittsburgh, revealing that out-of-state students pay approximately $9,000 above expected tuition, highlighting the model's practical applicability for prospective students assessing educational investments.</li>
         </ul>
 
         <h3>CPI Mini Research Capstone</h3>
@@ -150,20 +152,41 @@
 
         <h3>Age Correlation in Married Couples, Bayesian Analysis Project</h3>
         <ul>
-            <li>Analyzed age relationships in 100 U.S. married couples, utilizing MCMC methods.</li>
-            <li>Demonstrated Bayesian methods provided narrower confidence intervals compared to frequentist methods.</li>
+            <li>Analyzed the relationship between the ages of husbands and wives using data from 100 sampled U.S. married couples, aiming to hypothesize a semiconjugate prior.</li>
+            <li>Generated predictive datasets through random sampling from established distributions, confirming a strong positive correlation between the ages.</li>
+            <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient, creating new confidence intervals for both.</li>
+            <li>Demonstrated that the Bayesian approach provided narrower confidence intervals for average ages, reducing them by over a year compared to frequentist methods.</li>
+            <li>Highlighted the advantages of Bayesian methods in estimating correlations, achieving a 2% reduction in the correlation coefficient's confidence interval.</li>
+            <li>Utilized R for data analysis, focusing on visualizing relationships and employing statistical techniques to enhance the reliability of findings on age dynamics in marriages.</li>
         </ul>
+      
+        <h3>Country Aid Mini Project</h3>
+        <ul>
+           <li>Analyzed socio-economic and health indicators to categorize countries most in need of humanitarian assistance for NGOs.</li>
+            <li>Conducted a correlation analysis and utilized Principal Component Analysis (PCA) to identify key factors affecting country development, including child mortality, income, life expectancy, and health expenditure.</li>
+            <li>Determined three optimal clusters through clustering techniques, finding that Partitioning Around Medoids (PAM) clustering outperformed K-means due to its resilience to outliers.</li>
+            <li>Identified Cluster 1, comprising 51 countries with the most critical needs, highlighting urgent areas for intervention, such as high child mortality and low average income.</li>
+            <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities and underscoring the need for targeted interventions in Cluster 1.</li>
+            <li>Developed an R workflow for data analysis, including loading libraries, performing exploratory data analysis, and executing clustering methods to assess humanitarian needs.</li>
+</ul>
 
         <h3>Credit Risk Assessment Model, Data Science Project</h3>
         <ul>
-            <li>Developed a logistic regression model predicting credit risk with 78% accuracy.</li>
-            <li>Utilized datasets with features like age and job type for model training.</li>
+            <li>Analyzed customer attributes to predict credit risk using logistic regression, enhancing banks' ability to assess potential credit risks efficiently.</li>
+            <li>Managed data preprocessing, handling missing values and converting categorical variables to dummy variables to prepare the dataset for analysis.</li>
+            <li>Developed a comprehensive model achieving approximately 78% accuracy, allowing early identification of high-risk customers based on readily available information.</li>
+            <li>Utilized two datasets, incorporating features such as age, gender, job type, and credit amount, to train and evaluate the model.</li>
+            <li>Created visualizations, including pie charts and scatterplots, to understand credit risk distributions and relationships among variables effectively.</li>
+            <li>Implemented a workflow in Python, utilizing libraries like pandas and scikit-learn, to conduct exploratory data analysis, visualize results, and train the logistic regression model.</li>
         </ul>
         
         <h3>Students' Adaptability to Online Learning, Data Science Project</h3>
         <ul>
-            <li>Investigated factors affecting adaptability to online learning with a 93% prediction accuracy.</li>
-            <li>Created visualizations to analyze relationships among demographic factors.</li>
+            <li>Investigated students' adaptability to online learning by applying data wrangling, visualization, and machine learning techniques to understand key influencing factors and predict adaptability levels.</li>
+            <li>Achieved approximately 93% accuracy in predicting adaptability using advanced machine learning models, including non-linear Support Vector Machine (SVM) and Random Forest, outperforming basic models like Naive Bayes.</li>
+            <li>Identified significant factors influencing adaptability, such as age, class duration, gender, and education level, while finding device type and load-shedding to be less influential.</li>
+            <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors, enhancing understanding of student adaptability.</li>
+            <li>Prepared data by encoding categorical variables, scaling features, and conducting hyperparameter tuning to optimize model performance for accuracy, precision, and recall.</li>
         </ul>
     </div>
 
