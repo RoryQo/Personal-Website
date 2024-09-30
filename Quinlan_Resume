@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Link</title>
+</head>
+<body>
+    <h1>Download the PDF</h1>
+    <p>
+        You can download the PDF file by clicking the link below:
+    </p>
+    <a href="https://github.com/RoryQo/Resume/blob/main/Quinlan_Resume.pdf" target="_blank">Download PDF</a>
+</body>
+</html>
