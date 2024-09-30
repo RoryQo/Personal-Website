@@ -130,17 +130,16 @@ li {
 }
 .about-me-content {
     display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between text and image */
     align-items: center; /* Center align items vertically */
+}
+
+.about-me-image {
+    max-width: 150px; /* Set a smaller width for the image */
+    margin-right: 20px; /* Space between the image and text */
+    border-radius: 8px; /* Rounded corners for the image */
 }
 
 .about-me p {
     flex: 1; /* Allow text to take up available space */
-    margin-right: 20px; /* Space between text and image */
-}
-
-.about-me-image {
-    max-width: 40%; /* Limit image width */
-    border-radius: 8px; /* Rounded corners for the image */
 }
 
