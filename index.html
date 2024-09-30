@@ -6,33 +6,65 @@
     <title>Rory Quinlan's Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #f9f9f9;
-        }
-        h1, h2, h3, h4 {
+            background-color: #f0f4f8;
             color: #333;
         }
         h1 {
-            border-bottom: 2px solid #333;
+            text-align: center;
+            color: #00796b;
+            border-bottom: 3px solid #00796b;
             padding-bottom: 10px;
         }
-        .contact-info {
-            margin-bottom: 20px;
+        h2, h3, h4 {
+            color: #00575b;
         }
-        .section {
+        .contact-info {
+            text-align: center;
             margin-bottom: 20px;
         }
         .toc {
-            margin-bottom: 20px;
-            padding: 10px;
             background-color: #e0f7fa;
-            border-radius: 5px;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .toc h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #00796b;
         }
         .toc a {
             text-decoration: none;
             color: #00796b;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #00796b;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -42,7 +74,7 @@
     <div class="contact-info">
         <p>💻 <a href="https://github.com/Roryqo">GitHub</a> | 
            🔗 <a href="https://www.linkedin.com/in/rory-quinlan">LinkedIn</a> | 
-           📧 RoryQo@gmail.com
+           📧 <a href="mailto:RoryQo@gmail.com">RoryQo@gmail.com</a>
         </p>
     </div>
 
@@ -60,43 +92,42 @@
     <div class="section" id="education">
         <h2>EDUCATION</h2>
         <h3>University of Pittsburgh, Pittsburgh, PA</h3>
-        <p>Master of Science in Quantitative Economics <br> Expected: April 2025</p>
+        <p><strong>Master of Science in Quantitative Economics</strong><br> Expected: April 2025</p>
         
         <h3>University of Pittsburgh, Pittsburgh, PA</h3>
-        <p>Bachelor of Science in Statistics & Economics <br> April 2024</p>
-        <p>M GPA: 3.25 <br> Dean's list 3 consecutive years</p>
+        <p><strong>Bachelor of Science in Statistics & Economics</strong><br> April 2024<br> GPA: 3.25 | Dean's List (3 consecutive years)</p>
     </div>
 
     <div class="section" id="experience">
         <h2>EXPERIENCE</h2>
         <h4>University of Pittsburgh, Pittsburgh, PA</h4>
-        <p><strong>Peer Financial Educator, Head of Data Analysis Team</strong> <br> August 2022 - Present</p>
+        <p><strong>Peer Financial Educator, Head of Data Analysis Team</strong><br> August 2022 - Present</p>
         <ul>
-            <li>Analyzed survey data from workshops and programs, suggesting adjustments to increase student satisfaction by 27%</li>
-            <li>Led over 50 group sessions and workshops to educate students on selected financial topics, both virtually and in person</li>
-            <li>Created and implemented new training initiatives such as online modules and interactive software, boosting student financial literacy scores by 17%</li>
-            <li>Engaged in 20+ one-on-one coaching sessions with students to discuss a financial topic of choice</li>
-            <li>Suggested program alterations reducing financial waste by 12% from monthly Rmarkdown reports</li>
+            <li>Analyzed survey data from workshops, increasing student satisfaction by 27%.</li>
+            <li>Led over 50 workshops on financial topics, both virtually and in-person.</li>
+            <li>Implemented online training initiatives, boosting financial literacy scores by 17%.</li>
+            <li>Conducted 20+ one-on-one coaching sessions on financial topics.</li>
+            <li>Proposed program changes that reduced financial waste by 12%.</li>
         </ul>
 
-        <p><strong>Undergraduate Research Assistant, Mobilization and Political Economy Program</strong> <br> August 2023 - May 2024</p>
+        <p><strong>Undergraduate Research Assistant, Mobilization and Political Economy Program</strong><br> August 2023 - May 2024</p>
         <ul>
-            <li>Performed advanced statistical, qualitative, and quantitative analysis on post surveys</li>
-            <li>Assisted on grant writing and annual NSF report</li>
-            <li>Wrote and managed quarterly newsletter delivered to 500+ professors across the country</li>
+            <li>Performed advanced statistical and qualitative analysis on post surveys.</li>
+            <li>Assisted in grant writing and annual NSF reporting.</li>
+            <li>Managed a quarterly newsletter delivered to 500+ professors.</li>
         </ul>
 
         <p><strong>Undergraduate Teaching Assistant, Microeconomics 100</strong><br> August 2023 - January 2024</p>
         <ul>
-            <li>Supported students during office hours, addressing questions and clarifying complex microeconomic topics</li>
-            <li>Organized review sessions before exams, improving overall student performance and comprehension</li>
+            <li>Supported students during office hours, clarifying complex topics.</li>
+            <li>Organized review sessions, improving student performance.</li>
         </ul>
 
         <h4>Walmart Inc, Pittsburgh, PA</h4>
         <p><strong>E-Commerce Team Lead</strong><br> May 2017 - April 2021</p>
         <ul>
-            <li>Led a group of associates pioneering new systems for the E-Commerce division, enhancing accuracy by 23%</li>
-            <li>Organized efficient trips and routes, increasing productivity by 66%</li>
+            <li>Led a team to enhance E-Commerce systems, improving accuracy by 23%.</li>
+            <li>Organized efficient logistics, increasing productivity by 66%.</li>
         </ul>
     </div>
 
@@ -104,62 +135,36 @@
         <h2>PROJECTS</h2>
         <h3>Tuition Variation Model, Undergraduate Research Capstone</h3>
         <ul>
-            <li>Developed a predictive model in R to analyze tuition rates for public and private four-year universities in the U.S., utilizing institutional, quality of life, and crime metrics to explain tuition variability.</li>
-            <li>Achieved over 85% of variability in tuition rates accounted for, with national ranking identified as the most significant predictor, demonstrating that prestigious institutions leverage their rankings to charge higher tuition.</li>
-            <li>Collected data from three public datasets encompassing 60 observations from top U.S. universities, including metrics such as institutional control, national rank, and median income.</li>
-            <li>Constructed a comprehensive linear regression model, employing leave-one-out cross-validation (LOOCV) to validate predictive capabilities and ensuring robustness against overfitting.</li>
-            <li>Conducted thorough data wrangling to clean and prepare datasets, addressing missing values and ensuring appropriate variable encoding.</li>
-            <li>Applied the model to the University of Pittsburgh, revealing that out-of-state students pay approximately $9,000 above expected tuition, highlighting the model's practical applicability for prospective students assessing educational investments.</li>
+            <li>Developed a predictive model in R analyzing tuition rates for U.S. universities.</li>
+            <li>Achieved 85% variability in tuition rates, with national ranking as the key predictor.</li>
+            <li>Constructed a linear regression model using cross-validation for validation.</li>
+            <li>Applied the model to the University of Pittsburgh, revealing $9,000 in additional tuition for out-of-state students.</li>
         </ul>
 
         <h3>CPI Mini Research Capstone</h3>
         <ul>
-            <li>Analyzed the Consumer Price Index (CPI) specifically for college students by evaluating essential products and services they typically consume, resulting in a custom CPI calculation based on selected items and their respective weights across different U.S. regions</li>
-            <li>Collected price data through API retrieval for three regions (Northeast, Midwest, South) covering a five-year period (January 2017 to January 2022) to support the CPI calculations</li>
-            <li>Implemented functions to calculate inflation rates based on the custom CPI, facilitating insights into the sensitivity of student-related expenses to inflation changes</li>
-            <li>Conducted a comprehensive analysis highlighting that while the custom CPI is less robust than the general CPI, it captures inflation trends that significantly affect college students, particularly for essential items like gas, recreation, and rent</li>
-            <li>Developed a comparative graph visualizing inflation rates of the custom CPI against the general CPI over various lag periods, emphasizing the differing experiences of college students compared to the broader population</li>
+            <li>Created a custom CPI calculation for college students, analyzing essential products.</li>
+            <li>Collected price data across three U.S. regions over five years.</li>
+            <li>Visualized inflation rates of the custom CPI against general CPI trends.</li>
         </ul>
 
         <h3>Age Correlation in Married Couples, Bayesian Analysis Project</h3>
         <ul>
-            <li>Analyzed the relationship between the ages of husbands and wives using data from 100 sampled U.S. married couples, aiming to hypothesize a semiconjugate prior.</li>
-            <li>Generated predictive datasets through random sampling from established distributions, confirming a strong positive correlation between the ages.</li>
-            <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient, creating new confidence intervals for both.</li>
-            <li>Demonstrated that the Bayesian approach provided narrower confidence intervals for average ages, reducing them by over a year compared to frequentist methods.</li>
-            <li>Highlighted the advantages of Bayesian methods in estimating correlations, achieving a 2% reduction in the correlation coefficient's confidence interval.</li>
-            <li>Utilized R for data analysis, focusing on visualizing relationships and employing statistical techniques to enhance the reliability of findings on age dynamics in marriages.</li>
+            <li>Analyzed age relationships in 100 U.S. married couples, utilizing MCMC methods.</li>
+            <li>Demonstrated Bayesian methods provided narrower confidence intervals compared to frequentist methods.</li>
         </ul>
 
-        <h3>Country Needs Assessment for Humanitarian Aid, Data Science Foundations Project</h3>
+        <h3>Credit Risk Assessment Model, Data Science Project</h3>
         <ul>
-            <li>Analyzed socio-economic and health indicators to categorize countries most in need of humanitarian assistance from NGOs.</li>
-            <li>Conducted a correlation analysis and utilized Principal Component Analysis (PCA) to identify key factors affecting country development, including child mortality, income, life expectancy, and health expenditure.</li>
-            <li>Determined three optimal clusters through clustering techniques, finding that Partitioning Around Medoids (PAM) clustering outperformed K-means due to its resilience to outliers.</li>
-            <li>Identified Cluster 1, comprising 51 countries with the most critical needs, highlighting urgent areas for intervention, such as high child mortality and low average income.</li>
-            <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities and underscoring the need for targeted interventions in Cluster 1.</li>
-            <li>Developed an R workflow for data analysis, including loading libraries, performing exploratory data analysis, and executing clustering methods to assess humanitarian needs.</li>
-        </ul>
-
-        <h3>Credit Risk Assessment Model, Data Science with Python Class Project</h3>
-        <ul>
-            <li>Analyzed customer attributes to predict credit risk using logistic regression, enhancing banks' ability to assess potential credit risks efficiently.</li>
-            <li>Developed a comprehensive model achieving approximately 78% accuracy, allowing early identification of high-risk customers based on readily available information.</li>
-            <li>Utilized two datasets, incorporating features such as age, gender, job type, and credit amount, to train and evaluate the model.</li>
-            <li>Created visualizations, including pie charts and scatterplots, to understand credit risk distributions and relationships among variables effectively.</li>
-            <li>Managed data preprocessing, handling missing values and converting categorical variables to dummy variables to prepare the dataset for analysis.</li>
-            <li>Implemented a workflow in Python, utilizing libraries like pandas and scikit-learn, to conduct exploratory data analysis, visualize results, and train the logistic regression model.</li>
-        </ul>
-
-        <h3>Students' Adaptability to Online Learning, Data Science with Python Class Project</h3>
-        <ul>
-            <li>Investigated students' adaptability to online learning by applying data wrangling, visualization, and machine learning techniques to understand key influencing factors and predict adaptability levels.</li>
-            <li>Prepared data by encoding categorical variables, scaling features, and conducting hyperparameter tuning to optimize model performance for accuracy, precision, and recall.</li>
-            <li>Achieved approximately 93% accuracy in predicting adaptability using advanced machine learning models, including non-linear Support Vector Machine (SVM) and Random Forest, outperforming basic models like Naive Bayes.</li>
-            <li>Identified significant factors influencing adaptability, such as age, class duration, gender, and education level, while finding device type and load-shedding to be less influential.</li>
-            <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors, enhancing understanding of student adaptability.</li>
+            <li>Developed a logistic regression model predicting credit risk with 78% accuracy.</li>
+            <li>Utilized datasets with features like age and job type for model training.</li>
         </ul>
         
+        <h3>Students' Adaptability to Online Learning, Data Science Project</h3>
+        <ul>
+            <li>Investigated factors affecting adaptability to online learning with a 93% prediction accuracy.</li>
+            <li>Created visualizations to analyze relationships among demographic factors.</li>
+        </ul>
     </div>
 
     <div class="section" id="skills">
