@@ -60,7 +60,7 @@ li {
     margin-bottom: 10px;
 }
 .navbar {
-    background-color: #007bff; /* Blue background color for the navbar */
+    background-color: #002b5c; /* Darker University of Pittsburgh blue */
     border-bottom: 2px solid #ccc; /* Gray border at the bottom */
     padding: 10px; /* Padding for the navbar */
     display: flex; /* Use flexbox for layout */
@@ -78,8 +78,9 @@ li {
 }
 
 .navbar a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #004d7f; /* Darker blue on hover */
 }
+
 
 .about-me {
     margin: 20px 0; /* Spacing above and below the section */
