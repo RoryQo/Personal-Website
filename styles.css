@@ -59,44 +59,44 @@ ul {
 li {
     margin-bottom: 10px;
 }
-nav {
-    background: linear-gradient(135deg, #002b5c, #004d7f); /* Gradient background */
-    padding: 10px 0; /* Padding for top and bottom */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-}
-
 .navbar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center items */
+    display: flex;
+    justify-content: center;
+    background-color: #002b5c; /* Dark blue background */
+    padding: 15px; /* Spacing around the navbar */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
-.navbar li {
-    margin: 0 15px; /* Increased margin for more space */
+.nav-item {
+    background-color: #004d7f; /* Lighter blue for nav items */
+    border-radius: 5px; /* Rounded corners for nav items */
+    margin: 0 10px; /* Space between items */
+    padding: 10px 15px; /* Padding inside each item */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
 }
 
-.navbar a {
-    display: block; /* Make the link a block to fill the box */
-    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px; /* Space around links */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+.nav-item a {
+    color: #ffffff; /* White text for better contrast */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
 }
 
-.navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Brighter on hover */
-    transform: translateY(-2px); /* Slight lift effect */
+.nav-item:hover {
+    background-color: #005493; /* Darker blue on hover */
 }
 
-/* Optional: To add a border around the whole navbar */
-nav {
-    border-bottom: 2px solid #004d7f; /* Border color for the navbar */
-    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom */
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    .nav-item {
+        margin: 5px 0; /* Adjust margin for stacked items */
+    }
 }
+
 .about-me {
     background-color: #f9f9f9; /* Light gray background */
     border-radius: 8px; /* Rounded corners */
