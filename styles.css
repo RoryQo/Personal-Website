@@ -123,3 +123,29 @@ li {
 .about-me-image:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+.contact-info {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the contact info */
+    padding: 10px; /* Padding for better spacing */
+    background-color: #f0f4f8; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-info p {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-info a {
+    color: #007bff; /* Use the same blue as the navbar */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    padding: 5px 10px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-info a:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
