@@ -112,7 +112,7 @@ li {
 }
 
 .about-me-image {
-    width: 250px; /* Set a larger width */
+    width: 400px; /* Set a larger width */
     height: auto; /* Keep aspect ratio */
     border: 3px solid #002b5c; /* University of Pittsburgh blue border */
     border-radius: 8px; /* Rounded corners */
