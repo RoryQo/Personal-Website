@@ -150,3 +150,19 @@ li {
     background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
     color: #0056b3; /* Darker blue on hover */
 }
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF; /* Change color as needed */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
