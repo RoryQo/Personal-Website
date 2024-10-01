@@ -153,15 +153,17 @@ li {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    color: white; /* Change this to your navbar link color */
-    background-color: #007BFF; /* Change this to match your navbar background */
+    color: white; /* Text color */
+    background-color: #0056b3; /* Darker blue background */
     text-decoration: none;
     border-radius: 5px;
-    margin: 5px 0; /* Optional: space between buttons */
+    margin: 10px 0; /* Optional: space above/below button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
+    background-color: #007bff; /* Lighter shade for hover effect */
 }
+
 
 
