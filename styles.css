@@ -170,5 +170,18 @@ li {
     gap: 10px; /* Space between the buttons */
 }
 
+.btn-download {
+    color: white; /* Text color */
+    background-color: #003366; /* Dark navy */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-download:hover {
+    background-color: #00509E; /* Lighter shade on hover */
+}
 
 
