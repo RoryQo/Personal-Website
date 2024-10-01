@@ -52,9 +52,6 @@ To make this website your own, follow these steps:
 ## Contributing
 Feel free to enhance this template! If you have suggestions for features or improvements, consider opening an issue or submitting a pull request.
 
-## License
-This template is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 For any questions or feedback, reach out via:
 - [GitHub](https://github.com/Roryqo)
