@@ -2,9 +2,14 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: #f0f4f8;
+    background-color: #f0f4f8; /* Fallback color */
+    background-image: url('https://www.transparenttextures.com/patterns/ocean.png'); /* Ocean texture */
+    background-size: cover; /* Scale the background image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-attachment: fixed; /* Fix the background in place */
     color: #333;
 }
+
 
 h1 {
     text-align: center;
