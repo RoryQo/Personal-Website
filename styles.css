@@ -2,7 +2,6 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-image: url('https://www.transparenttextures.com/assets/texture.png'); /* Texture only */
     background-color: #f0f4f8;
     color: #333;
 }
@@ -19,8 +18,12 @@ h2, h3, h4 {
 }
 
 .contact-info {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the contact info */
+    padding: 10px; /* Padding for better spacing */
+    background-color: #d0d7de; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .toc {
@@ -135,15 +138,6 @@ li {
 
 .about-me-image:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.contact-info {
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space below the contact info */
-    padding: 10px; /* Padding for better spacing */
-    background-color: #f0f4f8; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .contact-info p {
