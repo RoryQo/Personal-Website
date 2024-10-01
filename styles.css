@@ -165,5 +165,10 @@ li {
     background-color: #007bff; /* Lighter shade for hover effect */
 }
 
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+}
+
 
 
