@@ -2,11 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: #f0f4f8; /* Fallback color */
-   background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/ocean.png');
-    background-size: cover; /* Scale the background image */
-    background-repeat: no-repeat; /* Prevent repetition */
-    background-attachment: fixed; /* Fix the background in place */
+    background-color: #f0f4f8;
+    background-image: url('https://www.transparenttextures.com/patterns/ocean.png'); /* Ocean texture */
     color: #333;
 }
 
@@ -24,10 +21,19 @@ h2, h3, h4 {
 .contact-info {
     text-align: center;
     margin-bottom: 20px;
-    background-color: #c4d6e2; /* Gray color */
+    background-color: rgba(220, 220, 220, 0.9); /* Light gray with slight transparency */
     padding: 10px; /* Padding for better spacing */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-info a {
+    color: #004d7f; /* Change link color to match the site */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:hover {
+    color: #002b5c; /* Darker color on hover */
 }
 
 .toc {
@@ -142,25 +148,6 @@ li {
 
 .about-me-image:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.contact-info p {
-    margin: 0; /* Remove default margin */
-}
-
-.contact-info {
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: rgba(220, 220, 220, 0.9); /* Light gray with slight transparency */
-    padding: 10px; /* Padding for better spacing */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-
-.contact-info a:hover {
-    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
-    color: #0056b3; /* Darker blue on hover */
 }
 
 .button {
