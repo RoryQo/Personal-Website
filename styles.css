@@ -183,4 +183,17 @@ li {
 .btn-download:hover {
     background-color: #00509E; /* Lighter shade on hover */
 }
+.contact-button {
+    color: white;
+    background-color: #003366; /* Dark navy */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px; /* Adds space between the name and the button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
 
+.contact-button:hover {
+    background-color: #00509E; /* Lighter shade on hover */
+}
