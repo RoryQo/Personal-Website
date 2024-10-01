@@ -1,25 +1,25 @@
-# Rory Quinlan's Resume Template
+# Rory Quinlan's Personal Website Template
 
 ## Overview
-This repository contains a customizable resume template designed for easy adaptation. Built with HTML and CSS, it features a clean layout and straightforward navigation, allowing you to showcase your educational background, professional experience, skills, and projects effectively.
+This repository contains a customizable personal website template designed for easy adaptation. Built with HTML and CSS, it features a clean layout and straightforward navigation, allowing you to showcase your educational background, professional experience, skills, and projects effectively.
 
 ## Features
 - **Responsive Design**: The template is optimized for various screen sizes.
-- **Easy Navigation**: A navigation bar linking to different sections of the resume.
+- **Easy Navigation**: A navigation bar linking to different sections of the site.
 - **Contact Information**: Convenient links to your professional profiles and email.
 - **Detailed Sections**: Individual pages for Education, Experience, Projects, Skills, and Certifications.
 
 ## Getting Started
 
 ### Prerequisites
-You need a web browser to view the HTML resume. No additional software is required.
+You need a web browser to view the HTML website. No additional software is required.
 
 ### Installation
 1. Clone or download this repository to your local machine.
 2. Open the `index.html` file in your preferred web browser.
 
 ### Customization Steps
-To make this resume your own, follow these steps:
+To make this website your own, follow these steps:
 
 1. **Edit `index.html`**:
    - Update your name, title, and contact information.
@@ -33,10 +33,10 @@ To make this resume your own, follow these steps:
    - **Certifications**: Modify `certifications.html` to include any relevant certifications you have obtained.
 
 3. **Style Adjustments**:
-   - Edit `styles.css` to change fonts, colors, and layout styles according to your preferences. This will help you personalize the look and feel of your resume.
+   - Edit `styles.css` to change fonts, colors, and layout styles according to your preferences. This will help you personalize the look and feel of your website.
 
 ## Template Structure
-- **index.html**: Main HTML file for the resume.
+- **index.html**: Main HTML file for the website.
 - **projects.html**: Details about your projects.
 - **education.html**: Your educational qualifications.
 - **experience.html**: Professional experience overview.
