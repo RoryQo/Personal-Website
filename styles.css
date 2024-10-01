@@ -186,14 +186,16 @@ li {
 .contact-button {
     color: white;
     background-color: #003366; /* Dark navy */
-    padding: 5px 10px;
+    padding: 3px 8px; /* Smaller padding */
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-left: 10px; /* Adds space between the name and the button */
+    margin-left: 10px; /* Space between the name and the button */
+    font-size: 0.9em; /* Smaller font size */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .contact-button:hover {
     background-color: #00509E; /* Lighter shade on hover */
 }
+
