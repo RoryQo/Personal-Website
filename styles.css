@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-
 h1 {
     text-align: center;
     color: #002b5c;
@@ -23,10 +22,10 @@ h2, h3, h4 {
 }
 
 .contact-info {
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space below the contact info */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #c4d6e2; /* Gray color */
     padding: 10px; /* Padding for better spacing */
-    background-color: #d0d7de; /* Light gray background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
