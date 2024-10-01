@@ -2,9 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-image: url('https://www.transparenttextures.com/assets/texture.png'), 
-                      url('https://raw.githubusercontent.com/RoryQo/Personal-Website/main/Quinlan_014.jpg');
-    background-size: cover, cover;
+    background-image: url('https://www.transparenttextures.com/assets/texture.png'); /* Texture only */
     background-color: #f0f4f8;
     color: #333;
 }
