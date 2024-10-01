@@ -1,5 +1,5 @@
 # Rory Quinlan's Personal Website Template 
-
+ 
 ## Overview
 This repository contains a customizable personal website template designed for easy adaptation. Built with HTML and CSS, it features a clean layout and straightforward navigation, allowing you to showcase your educational background, professional experience, skills, and projects effectively.
 
