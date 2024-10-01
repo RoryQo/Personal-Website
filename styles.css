@@ -112,7 +112,7 @@ li {
 }
 
 .about-me-image {
-    width: 150px; /* Set a smaller width */
+    width: 250px; /* Set a larger width */
     height: auto; /* Keep aspect ratio */
     border: 3px solid #002b5c; /* University of Pittsburgh blue border */
     border-radius: 8px; /* Rounded corners */
@@ -123,6 +123,7 @@ li {
 .about-me-image:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
 .contact-info {
     text-align: center; /* Center the text */
     margin-bottom: 20px; /* Space below the contact info */
