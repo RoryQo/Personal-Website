@@ -1,209 +1,55 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #f0f4f8;
-    color: #333;
-}
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rory Quinlan's Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rory Quinlan</h1>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="All.html">All Sections</a>
+        
+    </div>
 
-h1 {
-    text-align: center;
-    color: #002b5c;
-    border-bottom: 3px solid #002b5c;
-    padding-bottom: 10px;
-}
 
-h2, h3, h4 {
-    color: #004d7f;
-}
+    <div class="contact-info">
+    <p>
+        💻 <a href="https://github.com/Roryqo">GitHub</a> | 
+        🔗 <a href="https://www.linkedin.com/in/rory-quinlan">LinkedIn</a> | 
+        📧 <a href="mailto:RoryQo@gmail.com">RoryQo@gmail.com</a> | 
+        📄 <a href="https://github.com/RoryQo/Personal-Website/raw/main/resume.pdf" download>Download Resume</a>
+    </p>
+</div>
 
-.contact-info {
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space below the contact info */
-    padding: 10px; /* Padding for better spacing */
-    background-color: #d0d7de; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
 
-.toc {
-    background-color: #c4d6e2;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+   <div class="about-me">
+    <h2>About Me</h2>
+    <div class="about-me-content">
+        <div class="about-me-text-container">
+       
+        <p>I’m currently pursuing a Master of Science in Quantitative Economics at the University of Pittsburgh, where I also earned my Bachelor’s degree in Statistics and Economics. With a strong foundation in data science, I thrive on extracting patterns from complex data.</p>
 
-.toc h2 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #002b5c;
-}
+<p>Throughout my academic journey, I have engaged in various projects that have honed my analytical skills and deepened my understanding of economic trends and data science. My undergraduate research capstone involved developing a predictive model for tuition rates at four-year universities, analyzing key institutional metrics that influence costs, and emphasizing the importance of informed decision-making for prospective students regarding their educational investments. Additionally, I conducted a research project on the Consumer Price Index (CPI) specifically for college students, evaluating essential products and services to create a customized CPI that reflects their unique financial experiences. These experiences have enhanced my technical skills and reinforced my passion for approaching real-world economic challenges through rigorous analysis.</p>
 
-.toc a {
-    text-decoration: none;
-    color: #002b5c;
-}
+<p>In my professional experience, I have worked as a Peer Financial Educator and an Undergraduate Research Assistant, where I focused on analyzing survey data, enhancing the understanding of financial behaviors among students, and contributing to impactful workshops. My analysis work has allowed me to empower others with knowledge and improve financial literacy.</p>
 
-.toc ul {
-    list-style-type: none;
-    padding: 0;
-}
+<p>When I’m not immersed in data, you can find me advocating for shark conservation and supporting organizations like Saving the Blue. I believe that data-driven insights are essential for combating environmental challenges and fostering a sustainable future.</p>
 
-.toc li {
-    margin: 5px 0;
-}
+<p>Feel free to contact me through my GitHub or LinkedIn profiles. I look forward to connecting!</p>
 
-.section {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.section h2 {
-    color: #002b5c;
-    border-bottom: 2px solid #002b5c;
-    padding-bottom: 5px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-.navbar {
-    background-color: #002b5c; /* Darker University of Pittsburgh blue */
-    border-bottom: 2px solid #ccc; /* Gray border at the bottom */
-    padding: 10px; /* Padding for the navbar */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the items */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-
-.navbar a {
-    color: #ffffff; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
-    padding: 15px 20px; /* Padding for links */
-    margin: 0 10px; /* Space between links */
-    border-radius: 5px; /* Rounded corners for link boxes */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.navbar a:hover {
-    background-color: #004d7f; /* Darker blue on hover */
-}
-
-.about-me {
-    margin: 20px 0; /* Spacing above and below the section */
-}
-
-.about-me h2 {
-    color: #002b5c; /* Heading color */
-    margin-bottom: 15px; /* Space below the heading */
-}
-
-.about-me-content {
-    display: flex; /* Use flexbox for layout */
-}
-
-.about-me-text-container {
-    background-color: #ffffff; /* Background for the text box */
-    border-radius: 8px; /* Rounded corners for the text box */
-    padding: 20px; /* Padding for the text box */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    flex: 1; /* Allow text box to take up available space */
-    margin-right: 20px; /* Space between text box and image */
-}
-
-.about-me-image-container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the image */
-    align-items: center; /* Center vertically */
-    margin-top: 20px; /* Add some spacing */
-}
-
-.about-me-image {
-    width: 400px; /* Set a larger width */
-    height: auto; /* Keep aspect ratio */
-    border: 3px solid #002b5c; /* University of Pittsburgh blue border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s; /* Smooth scaling effect */
-}
-
-.about-me-image:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.contact-info p {
-    margin: 0; /* Remove default margin */
-}
-
-.contact-info a {
-    color: #007bff; /* Use the same blue as the navbar */
-    text-decoration: none; /* Remove underline */
-    margin: 0 15px; /* Space between links */
-    padding: 5px 10px; /* Padding for links */
-    border-radius: 5px; /* Rounded corners for links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-}
-
-.contact-info a:hover {
-    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
-    color: #0056b3; /* Darker blue on hover */
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white; /* Text color */
-    background-color: #002b5c; /* Darker blue background */
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px 0; /* Optional: space above/below button */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.button:hover {
-    background-color: #007bff; /* Lighter shade for hover effect */
-}
-
-.button-container {
-    display: flex;
-    gap: 10px; /* Space between the buttons */
-}
-
-.btn-download {
-    color: white; /* Text color */
-    background-color: #003366; /* Dark navy */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.btn-download:hover {
-    background-color: #00509E; /* Lighter shade on hover */
-}
-
-.contact-button {
-    color: white;
-    background-color: #003366; /* Dark navy */
-    padding: 3px 8px; /* Smaller padding */
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-left: 10px; /* Space between the name and the button */
-    font-size: 0.9em; /* Smaller font size */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.contact-button:hover {
-    background-color: #00509E; /* Lighter shade on hover */
-}
+    </div>
+        <div class="about-me-image-container">
+            <img src="https://raw.githubusercontent.com/RoryQo/Personal-Website/main/Quinlan_014.jpg" alt="A picture of Rory Quinlan" class="about-me-image">
+        </div>
+    </div>
+</div>
+</body>
+</html>
