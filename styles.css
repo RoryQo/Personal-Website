@@ -1,9 +1,9 @@
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
     background-color: #f0f4f8;
-    background-image: url('https://www.transparenttextures.com/patterns/ocean.png'); /* Ocean texture */
     color: #333;
 }
 
@@ -19,21 +19,12 @@ h2, h3, h4 {
 }
 
 .contact-info {
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: rgba(220, 220, 220, 0.9); /* Light gray with slight transparency */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the contact info */
     padding: 10px; /* Padding for better spacing */
+    background-color: #d0d7de; /* Light gray background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.contact-info a {
-    color: #004d7f; /* Change link color to match the site */
-    text-decoration: none; /* Remove underline */
-}
-
-.contact-info a:hover {
-    color: #002b5c; /* Darker color on hover */
 }
 
 .toc {
@@ -148,6 +139,24 @@ li {
 
 .about-me-image:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.contact-info p {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-info a {
+    color: #007bff; /* Use the same blue as the navbar */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    padding: 5px 10px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-info a:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
+    color: #0056b3; /* Darker blue on hover */
 }
 
 .button {
