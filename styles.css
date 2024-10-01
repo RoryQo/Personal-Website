@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 20px;
     background-color: #f0f4f8; /* Fallback color */
-    background-image: url('https://www.transparenttextures.com/patterns/ocean.png'); /* Ocean texture */
+   background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/ocean.png');
     background-size: cover; /* Scale the background image */
     background-repeat: no-repeat; /* Prevent repetition */
     background-attachment: fixed; /* Fix the background in place */
