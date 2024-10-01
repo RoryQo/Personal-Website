@@ -2,22 +2,29 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
+    background-image: url('https://www.transparenttextures.com/assets/texture.png'), 
+                      url('https://raw.githubusercontent.com/RoryQo/Personal-Website/main/Quinlan_014.jpg');
+    background-size: cover, cover;
     background-color: #f0f4f8;
     color: #333;
 }
+
 h1 {
     text-align: center;
     color: #002b5c;
     border-bottom: 3px solid #002b5c;
     padding-bottom: 10px;
 }
+
 h2, h3, h4 {
     color: #004d7f;
 }
+
 .contact-info {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .toc {
     background-color: #c4d6e2;
     border-radius: 8px;
@@ -25,22 +32,27 @@ h2, h3, h4 {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .toc h2 {
     margin: 0;
     font-size: 1.5em;
     color: #002b5c;
 }
+
 .toc a {
     text-decoration: none;
     color: #002b5c;
 }
+
 .toc ul {
     list-style-type: none;
     padding: 0;
 }
+
 .toc li {
     margin: 5px 0;
 }
+
 .section {
     background-color: #ffffff;
     border-radius: 8px;
@@ -48,17 +60,21 @@ h2, h3, h4 {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .section h2 {
     color: #002b5c;
     border-bottom: 2px solid #002b5c;
     padding-bottom: 5px;
 }
+
 ul {
     padding-left: 20px;
 }
+
 li {
     margin-bottom: 10px;
 }
+
 .navbar {
     background-color: #002b5c; /* Darker University of Pittsburgh blue */
     border-bottom: 2px solid #ccc; /* Gray border at the bottom */
@@ -80,7 +96,6 @@ li {
 .navbar a:hover {
     background-color: #004d7f; /* Darker blue on hover */
 }
-
 
 .about-me {
     margin: 20px 0; /* Spacing above and below the section */
@@ -150,6 +165,7 @@ li {
     background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
     color: #0056b3; /* Darker blue on hover */
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -183,6 +199,7 @@ li {
 .btn-download:hover {
     background-color: #00509E; /* Lighter shade on hover */
 }
+
 .contact-button {
     color: white;
     background-color: #003366; /* Dark navy */
@@ -198,4 +215,3 @@ li {
 .contact-button:hover {
     background-color: #00509E; /* Lighter shade on hover */
 }
-
