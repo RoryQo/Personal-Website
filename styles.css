@@ -113,32 +113,27 @@ li {
 .about-me-content {
     display: flex;
     flex-wrap: wrap; /* Make the layout responsive */
+    gap: 20px; /* Space between text and image */
 }
 
 .about-me-text-container {
-    background-color: #ffffff; /* Background for the text box */
-    border-radius: 8px; /* Rounded corners for the text box */
-    padding: 20px; /* Padding for the text box */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     flex: 1; /* Allow text box to take up available space */
-    margin-right: 20px; /* Space between text box and image */
+    max-width: 400px; /* Limit maximum width */
+    font-size: 0.9em; /* Reduce font size */
+    line-height: 1.4; /* Adjust line height for compactness */
 }
 
 .about-me-image-container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the image */
-    align-items: center; /* Center vertically */
-    margin-top: 20px; /* Add some spacing */
+    flex: 1; /* Allow image box to take up available space */
+    max-width: 250px; /* Limit maximum width of the image */
 }
 
 .about-me-image {
-    width: 400px; /* Set a larger width */
-    height: auto; /* Keep aspect ratio */
-    border: 3px solid #002b5c; /* University of Pittsburgh blue border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s; /* Smooth scaling effect */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: keep rounded corners */
 }
+
 
 .about-me-image:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
