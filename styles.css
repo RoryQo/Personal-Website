@@ -110,28 +110,25 @@ li {
     margin-bottom: 15px; /* Space below the heading */
 }
 
-.about-me-text-container {
-    background-color: #ffffff; /* Background for the text box */
-    border-radius: 8px; /* Rounded corners for the text box */
-    padding: 20px; /* Padding for the text box */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    margin-bottom: 20px; /* Space below the text box */
-}
-
-.github-activity-aboutme, .about-me-image-container {
-    display: inline-block; /* Align them horizontally */
-    width: 48%; /* Adjust width as necessary */
-    margin: 1%; /* Spacing between elements */
+.about-me-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
 }
 
 .github-activity-aboutme {
-    background-color: #ffffff; /* Background for GitHub activity */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #e0e0e0; /* Match contact bar color */
     padding: 15px; /* Padding for the box */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    flex: 1; /* Allow this to take available space */
+    margin: 0 20px; /* Horizontal margins */
+}
+
+.github-activity-aboutme .graph-image {
+    width: 100%; /* Make the graph responsive */
 }
 
 .about-me-image-container {
+    flex: 1; /* Allow this to take available space */
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center the image */
     align-items: center; /* Center vertically */
@@ -224,11 +221,6 @@ li {
     .about-me-content {
         flex-direction: column; /* Stack the content vertically */
         align-items: center; /* Center the content */
-    }
-
-    .about-me-text-container {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 20px; /* Space below the text box */
     }
 
     .about-me-image {
