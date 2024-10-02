@@ -236,12 +236,12 @@ li {
 }
 
 .projects-content {
-    flex: 0 0 70%; /* Takes up 70% of the width */
+    flex: 0 0 30%; /* Takes up 70% of the width */
     margin-right: 20px; /* Space between the two sections */
 }
 
 .github-activity {
-    flex: 0 0 30%; /* Takes up 30% of the width */
+    flex: 0 0 70%; /* Takes up 30% of the width */
     padding-left: 20px; /* Optional: padding for better spacing */
     background-color: #e0e0e0; /* Optional: background color */
     border-radius: 8px; /* Optional: rounded corners */
