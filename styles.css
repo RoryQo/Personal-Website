@@ -248,4 +248,8 @@ li {
     padding: 15px; /* Optional: padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow */
 }
-
+.github-activity img {
+    width: 100%; /* Makes the image responsive to the container width */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
