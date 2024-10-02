@@ -59,17 +59,18 @@
         </div>
     </div>
 
-    <script>
-        const graphImage = document.querySelector('.github-activity-aboutme img');
-         graphImage.addEventListener('mouseover', () => {
-        graphImage.addEventListener('mouseover', () => {
-            graphImage.style.transform = 'scale(1.25)';
-            graphImage.style.border = '3px solid #002b5c'; // Add border on hover
-        });
-        
-        graphImage.addEventListener('mouseout', () => {
-            graphImage.style.transform = 'scale(1)';
-            graphImage.style.border = 'none'; // Remove border on mouse out
+   <script>
+        const graphImages = document.querySelectorAll('.github-activity-aboutme img');
+        graphImages.forEach(graphImage => {
+            graphImage.addEventListener('mouseover', () => {
+                graphImage.style.transform = 'scale(1.25)';
+                graphImage.style.border = '3px solid #002b5c'; // Add border on hover
+            });
+
+            graphImage.addEventListener('mouseout', () => {
+                graphImage.style.transform = 'scale(1)';
+                graphImage.style.border = 'none'; // Remove border on mouse out
+            });
         });
     </script>
 </body>
