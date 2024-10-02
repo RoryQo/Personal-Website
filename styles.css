@@ -118,17 +118,14 @@ li {
     margin-bottom: 20px; /* Space below the text box */
 }
 
-.github-activity-aboutme, .about-me-image-container {
-    display: inline-block; /* Align them horizontally */
-    width: 48%; /* Adjust width as necessary */
-    margin: 1%; /* Spacing between elements */
-}
-
 .github-activity-aboutme {
-    background-color: #ffffff; /* Background for GitHub activity */
+    background-color: #e0e0e0; /* Same gray as the contact info bar */
     border-radius: 8px; /* Rounded corners */
     padding: 15px; /* Padding for the box */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: inline-block; /* Align horizontally */
+    width: 48%; /* Adjust width as necessary */
+    margin: 1%; /* Spacing between elements */
 }
 
 .github-activity-aboutme .graph-image {
@@ -137,10 +134,9 @@ li {
 }
 
 .about-me-image-container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the image */
-    align-items: center; /* Center vertically */
-    margin-top: 20px; /* Add some spacing */
+    display: inline-block; /* Align horizontally */
+    width: 48%; /* Adjust width as necessary */
+    margin: 1%; /* Spacing between elements */
 }
 
 .about-me-image {
