@@ -2,20 +2,38 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: #f0f4f8;
-    background-image: url('https://example.com/ocean-texture.jpg'); /* Replace with a valid ocean texture URL */
+    background-color: #f0f4f8; /* Light background color */
+    background-image: url('https://raw.githubusercontent.com/RoryQo/Personal-Website/main/Water.jpg'); /* Use the raw image URL */
     background-size: cover; /* Ensure the background covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
     color: #333;
+    position: relative; /* Positioning for overlay */
 }
+
+/* Subtle overlay for better text visibility */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(240, 244, 248, 0.8); /* Slightly translucent overlay */
+    z-index: 0; /* Behind content */
+}
+
 h1 {
     text-align: center;
     color: #002b5c;
     border-bottom: 3px solid #002b5c;
     padding-bottom: 10px;
 }
+
 h2, h3, h4 {
     color: #004d7f;
 }
+
 .contact-info {
     text-align: center; /* Center the text */
     margin-bottom: 20px; /* Space below the contact info */
@@ -25,6 +43,7 @@ h2, h3, h4 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     font-size: 1em; /* Ensure consistent font size */
 }
+
 .toc {
     background-color: #c4d6e2;
     border-radius: 8px;
@@ -32,22 +51,27 @@ h2, h3, h4 {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .toc h2 {
     margin: 0;
     font-size: 1.5em;
     color: #002b5c;
 }
+
 .toc a {
     text-decoration: none;
     color: #002b5c;
 }
+
 .toc ul {
     list-style-type: none;
     padding: 0;
 }
+
 .toc li {
     margin: 5px 0;
 }
+
 .section {
     background-color: #ffffff;
     border-radius: 8px;
@@ -55,17 +79,21 @@ h2, h3, h4 {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .section h2 {
     color: #002b5c;
     border-bottom: 2px solid #002b5c;
     padding-bottom: 5px;
 }
+
 ul {
     padding-left: 20px;
 }
+
 li {
     margin-bottom: 10px;
 }
+
 .navbar {
     background-color: #002b5c; /* Darker University of Pittsburgh blue */
     border-bottom: 2px solid #ccc; /* Gray border at the bottom */
