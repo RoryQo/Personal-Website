@@ -135,7 +135,7 @@ li {
 }
 
 .contact-info a {
-    color: #007bff; /* Use the same blue as the navbar */
+    color: #d3d3d3; /* Use the same blue as the navbar */
     text-decoration: none; /* Remove underline */
     margin: 0 15px; /* Space between links */
     padding: 5px 10px; /* Padding for links */
