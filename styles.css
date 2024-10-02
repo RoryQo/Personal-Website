@@ -3,6 +3,8 @@ body {
     line-height: 1.6;
     margin: 20px;
     background-color: #f0f4f8;
+    background-image: url('https://example.com/ocean-texture.jpg'); /* Replace with a valid ocean texture URL */
+    background-size: cover; /* Ensure the background covers the entire area */
     color: #333;
 }
 h1 {
@@ -15,8 +17,13 @@ h2, h3, h4 {
     color: #004d7f;
 }
 .contact-info {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the contact info */
+    padding: 10px 0; /* Padding for better spacing (top and bottom) */
+    background-color: #d3d3d3; /* Light gray background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 1em; /* Ensure consistent font size */
 }
 .toc {
     background-color: #c4d6e2;
@@ -81,7 +88,6 @@ li {
     background-color: #004d7f; /* Darker blue on hover */
 }
 
-
 .about-me {
     margin: 20px 0; /* Spacing above and below the section */
 }
@@ -124,26 +130,12 @@ li {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-.contact-info {
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space below the contact info */
-    padding: 10px; /* Padding for better spacing */
-    background-color: #f0f4f8; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.contact-info {
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space below the contact info */
-    padding: 10px; /* Padding for better spacing */
-    background-color: #d3d3d3; /* Light gray background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+.contact-info p {
+    margin: 0; /* Remove default margin */
 }
 
 .contact-info a {
-    color: #002b5c; /* Change link color to match the site */
+    color: #007bff; /* Use the same blue as the navbar */
     text-decoration: none; /* Remove underline */
     margin: 0 15px; /* Space between links */
     padding: 5px 10px; /* Padding for links */
@@ -189,6 +181,7 @@ li {
 .btn-download:hover {
     background-color: #00509E; /* Lighter shade on hover */
 }
+
 .contact-button {
     color: white;
     background-color: #003366; /* Dark navy */
