@@ -133,12 +133,17 @@ li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.contact-info p {
-    margin: 0; /* Remove default margin */
+.contact-info {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the contact info */
+    padding: 10px; /* Padding for better spacing */
+    background-color: #d3d3d3; /* Light gray background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .contact-info a {
-    color: #007bff; /* Use the same blue as the navbar */
+    color: #002b5c; /* Change link color to match the site */
     text-decoration: none; /* Remove underline */
     margin: 0 15px; /* Space between links */
     padding: 5px 10px; /* Padding for links */
@@ -150,6 +155,7 @@ li {
     background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
     color: #0056b3; /* Darker blue on hover */
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
