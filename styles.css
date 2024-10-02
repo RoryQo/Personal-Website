@@ -111,18 +111,26 @@ li {
     align-items: flex-start; /* Align items at the top */
 }
 
-.about-me-text-container {
-    flex: 1; /* Allow text box to take up available space */
-    margin-right: 20px; /* Space between text box and image */
+.about-me-box {
+    background-color: white; /* White background for the about me text */
+    padding: 15px; /* Padding for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1; /* Allow the text box to take available space */
+    margin-right: 20px; /* Space between text box and GitHub activity */
+}
+
+.github-activity-aboutme {
+    flex: 0 0 300px; /* Fixed width for the GitHub activity section */
+    margin-right: 20px; /* Space between the GitHub activity and the image */
 }
 
 .about-me-image-container {
     flex: 0 0 auto; /* Keep image at its natural size */
-    margin-left: 20px; /* Space between image and text */
 }
 
 .about-me-image {
-    width: 400px; /* Set a larger width */
+    width: 300px; /* Adjust the width */
     height: auto; /* Keep aspect ratio */
     border: 3px solid #002b5c; /* University of Pittsburgh blue border */
     border-radius: 8px; /* Rounded corners */
@@ -209,9 +217,9 @@ li {
         align-items: center; /* Center the content */
     }
 
-    .about-me-text-container {
+    .github-activity-aboutme {
         margin-right: 0; /* Remove right margin */
-        margin-bottom: 20px; /* Space below the text box */
+        margin-bottom: 20px; /* Space below the GitHub activity */
     }
 
     .about-me-image {
