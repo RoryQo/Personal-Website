@@ -112,107 +112,113 @@ li {
 
 .about-me-content {
     display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items out */
     align-items: flex-start; /* Align items at the top */
 }
 
 .about-me-text-container {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    flex: 2; /* Allow text box to take up more space */
+    background-color: #ffffff; /* Background for the text box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for the text box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1; /* Allow text box to take up available space */
     margin-right: 20px; /* Space between text box and GitHub activity */
 }
 
 .github-activity-aboutme {
-    flex: 1; /* Allow GitHub activity to take less space */
-    margin: 0 20px; /* Space around the GitHub activity */
+    background-color: #ffffff; /* Background for the GitHub activity box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for the GitHub activity box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1; /* Allow GitHub activity box to take up available space */
+    margin-right: 20px; /* Space between GitHub activity and image */
 }
 
 .about-me-image-container {
     flex: 1; /* Keep image at its natural size */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center vertically */
 }
 
 .about-me-image {
     width: 200px; /* Set a fixed width for the image */
     height: auto; /* Keep aspect ratio */
     border: 3px solid #002b5c; /* University of Pittsburgh blue border */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
 }
 
 .about-me-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .contact-info p {
-    margin: 0;
+    margin: 0; /* Remove default margin */
 }
 
 .contact-info a {
-    color: #007bff;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    color: #007bff; /* Use the same blue as the navbar */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    padding: 5px 10px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
 .contact-info a:hover {
-    background-color: rgba(0, 123, 255, 0.2);
-    color: #0056b3;
+    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
+    color: #0056b3; /* Darker blue on hover */
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    color: white;
-    background-color: #002b5c;
+    color: white; /* Text color */
+    background-color: #002b5c; /* Darker blue background */
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px 0;
-    transition: background-color 0.3s;
+    margin: 10px 0; /* Optional: space above/below button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .button:hover {
-    background-color: #007bff;
+    background-color: #007bff; /* Lighter shade for hover effect */
 }
 
 .button-container {
     display: flex;
-    gap: 10px;
+    gap: 10px; /* Space between the buttons */
 }
 
 .btn-download {
-    color: white;
-    background-color: #003366;
+    color: white; /* Text color */
+    background-color: #003366; /* Dark navy */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .btn-download:hover {
-    background-color: #00509E;
+    background-color: #00509E; /* Lighter shade on hover */
 }
 
 .contact-button {
     color: white;
-    background-color: #003366;
-    padding: 3px 8px;
+    background-color: #003366; /* Dark navy */
+    padding: 3px 8px; /* Smaller padding */
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-left: 10px;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Space between the name and the button */
+    font-size: 0.9em; /* Smaller font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .contact-button:hover {
-    background-color: #00509E;
+    background-color: #00509E; /* Lighter shade on hover */
 }
 
 /* Media Queries for Responsive Design */
