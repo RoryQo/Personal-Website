@@ -113,19 +113,19 @@ li {
 .about-me-content {
     display: flex;
     flex-wrap: wrap; /* Make the layout responsive */
-    gap: 20px; /* Space between text and image */
+    gap: 15px; /* Space between text and image */
 }
 
 .about-me-text-container {
     flex: 1; /* Allow text box to take up available space */
-    max-width: 400px; /* Limit maximum width */
-    font-size: 0.9em; /* Reduce font size */
+    max-width: 350px; /* Limit maximum width of the text container */
+    font-size: 0.85em; /* Reduce font size for the text */
     line-height: 1.4; /* Adjust line height for compactness */
 }
 
 .about-me-image-container {
     flex: 1; /* Allow image box to take up available space */
-    max-width: 250px; /* Limit maximum width of the image */
+    max-width: 200px; /* Limit maximum width of the image container */
 }
 
 .about-me-image {
@@ -245,6 +245,6 @@ li {
 }
 .github-activity img {
     width: 100%; /* Makes the image responsive to the container width */
-    max-width: 300px; /* Set a maximum width */
+    max-width: 400px; /* Set a maximum width */
     height: auto; /* Maintain aspect ratio */
 }
