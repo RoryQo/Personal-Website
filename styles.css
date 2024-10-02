@@ -228,3 +228,24 @@ li {
         width: 90%; /* Make the image responsive */
     }
 }
+.content-wrapper {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Space between left and right */
+    align-items: flex-start; /* Align items at the top */
+    margin-top: 20px; /* Space above the wrapper */
+}
+
+.projects-content {
+    flex: 0 0 70%; /* Takes up 70% of the width */
+    margin-right: 20px; /* Space between the two sections */
+}
+
+.github-activity {
+    flex: 0 0 30%; /* Takes up 30% of the width */
+    padding-left: 20px; /* Optional: padding for better spacing */
+    background-color: #e0e0e0; /* Optional: background color */
+    border-radius: 8px; /* Optional: rounded corners */
+    padding: 15px; /* Optional: padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
