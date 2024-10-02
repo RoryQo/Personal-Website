@@ -5,6 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rory Quinlan's Resume</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #002b5c;
+            border-bottom: 3px solid #002b5c;
+            padding-bottom: 10px;
+        }
+        .navbar {
+            background-color: #002b5c; 
+            padding: 10px; 
+            display: flex; 
+            justify-content: center; 
+        }
+        .navbar a {
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 15px 20px; 
+            margin: 0 10px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+        }
+        .contact-info {
+            text-align: center; 
+            margin-bottom: 20px; 
+            background-color: #e0e0e0; 
+            padding: 10px 0; 
+            border-radius: 8px; 
+        }
+        .about-me {
+            margin: 20px 0; 
+        }
+        .about-me-content {
+            display: flex; 
+            align-items: flex-start; 
+            justify-content: space-between; 
+        }
+        .about-me-text-container {
+            flex: 1; 
+            margin-right: 20px; 
+        }
+        .github-activity-aboutme {
+            flex: 1; 
+            background-color: #e0e0e0; 
+            border-radius: 8px; 
+            padding: 15px; 
+            margin: 0 20px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .about-me-image-container {
+            flex: 0 0 300px; 
+        }
+        .about-me-image {
+            width: 100%; 
+            border: 3px solid #002b5c; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+    </style>
 </head>
 <body>
     <h1>Rory Quinlan</h1>
@@ -29,8 +94,8 @@
 
     <div class="about-me">
         <h2>About Me</h2>
-        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-            <div style="flex: 1; margin-right: 20px;">
+        <div class="about-me-content">
+            <div class="about-me-text-container">
 
         <p>I’m currently pursuing a Master of Science in Quantitative Economics at the University of Pittsburgh, where I also earned my Bachelor’s degree in Statistics and Economics. With a strong foundation in data science, I thrive on extracting patterns from complex data.</p>
 
@@ -42,9 +107,9 @@
 
 <p>Feel free to contact me through my GitHub or LinkedIn profiles. I look forward to connecting!</p>
 
- </div>
+</div>
 
-            <div style="flex: 1; background-color: #e0e0e0; border-radius: 8px; padding: 15px; margin: 0 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <div class="github-activity-aboutme">
                 <h2>GitHub Activity</h2>
                 <p>This graph showcases my GitHub contributions over time, reflecting my ongoing engagement in projects and collaborations.</p>
                 <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
@@ -52,8 +117,8 @@
                 </a>
             </div>
 
-            <div style="flex: 0 0 300px;">
-                <img src="https://raw.githubusercontent.com/RoryQo/Personal-Website/main/Quinlan_014.jpg" alt="A picture of Rory Quinlan" style="width: 100%; height: auto; border: 3px solid #002b5c; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div class="about-me-image-container">
+                <img src="https://raw.githubusercontent.com/RoryQo/Personal-Website/main/Quinlan_014.jpg" alt="A picture of Rory Quinlan" class="about-me-image">
             </div>
         </div>
     </div>
