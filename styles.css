@@ -131,6 +131,11 @@ li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+.github-activity-aboutme .graph-image {
+    width: 100%; /* Make the graph fit the width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .about-me-image-container {
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center the image */
