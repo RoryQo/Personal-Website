@@ -7,18 +7,15 @@ body {
     background-size: cover; /* Ensure the background covers the entire area */
     color: #333;
 }
-
 h1 {
     text-align: center;
     color: #002b5c;
     border-bottom: 3px solid #002b5c;
     padding-bottom: 10px;
 }
-
 h2, h3, h4 {
     color: #004d7f;
 }
-
 .contact-info {
     text-align: center; /* Center the text */
     margin-bottom: 20px; /* Space below the contact info */
@@ -28,7 +25,6 @@ h2, h3, h4 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     font-size: 1em; /* Ensure consistent font size */
 }
-
 .toc {
     background-color: #c4d6e2;
     border-radius: 8px;
@@ -36,27 +32,22 @@ h2, h3, h4 {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .toc h2 {
     margin: 0;
     font-size: 1.5em;
     color: #002b5c;
 }
-
 .toc a {
     text-decoration: none;
     color: #002b5c;
 }
-
 .toc ul {
     list-style-type: none;
     padding: 0;
 }
-
 .toc li {
     margin: 5px 0;
 }
-
 .section {
     background-color: #ffffff;
     border-radius: 8px;
@@ -64,21 +55,17 @@ h2, h3, h4 {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .section h2 {
     color: #002b5c;
     border-bottom: 2px solid #002b5c;
     padding-bottom: 5px;
 }
-
 ul {
     padding-left: 20px;
 }
-
 li {
     margin-bottom: 10px;
 }
-
 .navbar {
     background-color: #002b5c; /* Darker University of Pittsburgh blue */
     border-bottom: 2px solid #ccc; /* Gray border at the bottom */
@@ -105,36 +92,33 @@ li {
     margin: 20px 0; /* Spacing above and below the section */
 }
 
+.about-me h2 {
+    color: #002b5c; /* Heading color */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
 .about-me-content {
     display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between text and image */
-    align-items: flex-start; /* Align items at the top */
 }
 
-.about-me-box {
-    background-color: white; /* White background for the about me text */
-    padding: 15px; /* Padding for the box */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    flex: 1; /* Allow the text box to take available space */
-    margin-right: 20px; /* Space between text box and GitHub activity */
-}
-
-.github-activity-aboutme {
-    flex: 0 0 200px; /* Adjusted width for GitHub activity section */
-    background-color: #e0e0e0; /* Same color as the contact info box */
-    padding: 15px; /* Padding for better spacing */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 0 20px; /* Space around the GitHub activity */
+.about-me-text-container {
+    background-color: #ffffff; /* Background for the text box */
+    border-radius: 8px; /* Rounded corners for the text box */
+    padding: 20px; /* Padding for the text box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1; /* Allow text box to take up available space */
+    margin-right: 20px; /* Space between text box and image */
 }
 
 .about-me-image-container {
-    flex: 0 0 auto; /* Keep image at its natural size */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Add some spacing */
 }
 
 .about-me-image {
-    width: 200px; /* Set a fixed width for the image */
+    width: 400px; /* Set a larger width */
     height: auto; /* Keep aspect ratio */
     border: 3px solid #002b5c; /* University of Pittsburgh blue border */
     border-radius: 8px; /* Rounded corners */
@@ -213,7 +197,6 @@ li {
 .contact-button:hover {
     background-color: #00509E; /* Lighter shade on hover */
 }
-
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .about-me-content {
@@ -221,27 +204,11 @@ li {
         align-items: center; /* Center the content */
     }
 
-    .github-activity-aboutme {
+    .about-me-text-container {
         margin-right: 0; /* Remove right margin */
-        margin-bottom: 20px; /* Space below the GitHub activity */
+        margin-bottom: 20px; /* Space below the text box */
     }
 
     .about-me-image {
         width: 90%; /* Make the image responsive */
     }
-}
-
-.graph-container {
-    text-align: center; /* Center the graph */
-    margin-top: 20px; /* Space above the graph */
-    padding: 10px 0; /* Padding for better spacing (top and bottom) */
-    background-color: #e0e0e0; /* Light gray background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.graph-image {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-}
