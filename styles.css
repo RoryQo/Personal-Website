@@ -213,3 +213,17 @@ li {
         width: 90%; /* Make the image responsive */
     }
 }
+.graph-container {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the graph */
+    padding: 10px 0; /* Padding for better spacing (top and bottom) */
+    background-color: #e0e0e0; /* Light gray background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.graph-image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
