@@ -7,57 +7,216 @@ body {
     background-size: cover; /* Ensure the background covers the entire area */
     color: #333;
 }
+
 h1 {
     text-align: center;
     color: #002b5c;
     border-bottom: 3px solid #002b5c;
     padding-bottom: 10px;
 }
+
 h2, h3, h4 {
     color: #004d7f;
 }
+
 .contact-info {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    background-color: #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1em;
-}
-.about-me {
-    margin: 20px 0;
-}
-.about-me-content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items evenly */
-    align-items: flex-start; /* Align items at the top */
-}
-.about-me-text-container {
-    flex: 1; /* Allow text box to take up available space */
-    margin-right: 20px; /* Space between text box and GitHub activity */
-}
-.github-activity-aboutme {
-    flex: 1; /* Allow GitHub activity box to take up space */
-    background-color: #e0e0e0; /* Same gray as the contact bar */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the contact info */
+    padding: 10px 0; /* Padding for better spacing (top and bottom) */
+    background-color: #e0e0e0; /* Light gray background color */
     border-radius: 8px; /* Rounded corners */
-    padding: 15px; /* Padding inside the box */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 20px; /* Space between GitHub activity and image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 1em; /* Ensure consistent font size */
 }
-.about-me-image-container {
-    flex: 0 0 300px; /* Fixed width for the image container */
-}
-.about-me-image {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Keep aspect ratio */
-    border: 3px solid #002b5c;
+
+.toc {
+    background-color: #c4d6e2;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.toc h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #002b5c;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #002b5c;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #002b5c;
+    border-bottom: 2px solid #002b5c;
+    padding-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: #002b5c; /* Darker University of Pittsburgh blue */
+    border-bottom: 2px solid #ccc; /* Gray border at the bottom */
+    padding: 10px; /* Padding for the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px 20px; /* Padding for links */
+    margin: 0 10px; /* Space between links */
+    border-radius: 5px; /* Rounded corners for link boxes */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    background-color: #004d7f; /* Darker blue on hover */
+}
+
+.about-me {
+    margin: 20px 0; /* Spacing above and below the section */
+}
+
+.about-me h2 {
+    color: #002b5c; /* Heading color */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.about-me-text-container {
+    background-color: #ffffff; /* Background for the text box */
+    border-radius: 8px; /* Rounded corners for the text box */
+    padding: 20px; /* Padding for the text box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-bottom: 20px; /* Space below the text box */
+}
+
+.github-activity-aboutme, .about-me-image-container {
+    display: inline-block; /* Align them horizontally */
+    width: 48%; /* Adjust width as necessary */
+    margin: 1%; /* Spacing between elements */
+}
+
+.github-activity-aboutme {
+    background-color: #ffffff; /* Background for GitHub activity */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-me-image-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Add some spacing */
+}
+
+.about-me-image {
+    width: 200px; /* Adjust width as necessary */
+    height: auto; /* Keep aspect ratio */
+    border: 3px solid #002b5c; /* University of Pittsburgh blue border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
 .about-me-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.contact-info p {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-info a {
+    color: #007bff; /* Use the same blue as the navbar */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    padding: 5px 10px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-info a:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white; /* Text color */
+    background-color: #002b5c; /* Darker blue background */
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0; /* Optional: space above/below button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #007bff; /* Lighter shade for hover effect */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+}
+
+.btn-download {
+    color: white; /* Text color */
+    background-color: #003366; /* Dark navy */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-download:hover {
+    background-color: #00509E; /* Lighter shade on hover */
+}
+
+.contact-button {
+    color: white;
+    background-color: #003366; /* Dark navy */
+    padding: 3px 8px; /* Smaller padding */
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px; /* Space between the name and the button */
+    font-size: 0.9em; /* Smaller font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact-button:hover {
+    background-color: #00509E; /* Lighter shade on hover */
 }
 
 /* Media Queries for Responsive Design */
@@ -66,11 +225,18 @@ h2, h3, h4 {
         flex-direction: column; /* Stack the content vertically */
         align-items: center; /* Center the content */
     }
+
     .about-me-text-container {
         margin-right: 0; /* Remove right margin */
         margin-bottom: 20px; /* Space below the text box */
     }
-    .about-me-image-container {
-        margin-top: 20px; /* Add spacing above the image */
+
+    .about-me-image {
+        width: 90%; /* Make the image responsive */
+    }
+    
+    .github-activity-aboutme, .about-me-image-container {
+        display: block; /* Stack them vertically on smaller screens */
+        width: 100%; /* Full width for small screens */
     }
 }
