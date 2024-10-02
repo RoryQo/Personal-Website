@@ -122,13 +122,14 @@ li {
 }
 
 .github-activity-aboutme {
-    flex: 0 0 250px; /* Adjusted width for GitHub activity section */
+    flex: 0 0 200px; /* Adjusted width for GitHub activity section */
     background-color: #e0e0e0; /* Same color as the contact info box */
     padding: 15px; /* Padding for better spacing */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin: 0 20px; /* Space around the GitHub activity */
 }
+
 
 .about-me-image-container {
     flex: 0 0 300px; /* Fixed width for the image container */
