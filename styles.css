@@ -4,7 +4,7 @@ body {
     margin: 20px;
     background-color: #f0f4f8;
     background-image: url('https://example.com/ocean-texture.jpg'); /* Replace with a valid ocean texture URL */
-    background-size: cover; /* Ensure the background covers the entire area */
+    background-size: cover;
     color: #333;
 }
 
@@ -20,13 +20,13 @@ h2, h3, h4 {
 }
 
 .contact-info {
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space below the contact info */
-    padding: 10px 0; /* Padding for better spacing (top and bottom) */
-    background-color: #e0e0e0; /* Light gray background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    font-size: 1em; /* Ensure consistent font size */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
 }
 
 .toc {
@@ -80,168 +80,169 @@ li {
 }
 
 .navbar {
-    background-color: #002b5c; /* Darker University of Pittsburgh blue */
-    border-bottom: 2px solid #ccc; /* Gray border at the bottom */
-    padding: 10px; /* Padding for the navbar */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the items */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: #002b5c;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a {
-    color: #ffffff; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
-    padding: 15px 20px; /* Padding for links */
-    margin: 0 10px; /* Space between links */
-    border-radius: 5px; /* Rounded corners for link boxes */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #004d7f; /* Darker blue on hover */
+    background-color: #004d7f;
 }
 
 .about-me {
-    margin: 20px 0; /* Spacing above and below the section */
+    margin: 20px 0;
 }
 
 .about-me-content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between text and image */
-    align-items: flex-start; /* Align items at the top */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 
 .about-me-box {
-    background-color: white; /* White background for the about me text */
-    padding: 15px; /* Padding for the box */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    flex: 1; /* Allow the text box to take available space */
-    margin-right: 20px; /* Space between text box and GitHub activity */
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px;
 }
 
 .github-activity-aboutme {
-    flex: 0 0 250px; /* Adjusted width for the GitHub activity section */
+    flex: 0 0 250px; /* Adjusted width for GitHub activity section */
     background-color: #e0e0e0; /* Same color as the contact info box */
     padding: 15px; /* Padding for better spacing */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-right: 20px; /* Space between the GitHub activity and the image */
+    margin: 0 20px; /* Space around the GitHub activity */
 }
 
 .about-me-image-container {
-    flex: 0 0 auto; /* Keep image at its natural size */
+    flex: 0 0 300px; /* Fixed width for the image container */
 }
 
 .about-me-image {
-    width: 300px; /* Adjust the width */
+    width: 100%; /* Adjust to fit the container */
     height: auto; /* Keep aspect ratio */
-    border: 3px solid #002b5c; /* University of Pittsburgh blue border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s; /* Smooth scaling effect */
+    border: 3px solid #002b5c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
 .about-me-image:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 .contact-info p {
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .contact-info a {
-    color: #007bff; /* Use the same blue as the navbar */
-    text-decoration: none; /* Remove underline */
-    margin: 0 15px; /* Space between links */
-    padding: 5px 10px; /* Padding for links */
-    border-radius: 5px; /* Rounded corners for links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-info a:hover {
-    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
-    color: #0056b3; /* Darker blue on hover */
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #0056b3;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    color: white; /* Text color */
-    background-color: #002b5c; /* Darker blue background */
+    color: white;
+    background-color: #002b5c;
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px 0; /* Optional: space above/below button */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin: 10px 0;
+    transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #007bff; /* Lighter shade for hover effect */
+    background-color: #007bff;
 }
 
 .button-container {
     display: flex;
-    gap: 10px; /* Space between the buttons */
+    gap: 10px;
 }
 
 .btn-download {
-    color: white; /* Text color */
-    background-color: #003366; /* Dark navy */
+    color: white;
+    background-color: #003366;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease;
 }
 
 .btn-download:hover {
-    background-color: #00509E; /* Lighter shade on hover */
+    background-color: #00509E;
 }
 
 .contact-button {
     color: white;
-    background-color: #003366; /* Dark navy */
-    padding: 3px 8px; /* Smaller padding */
+    background-color: #003366;
+    padding: 3px 8px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-left: 10px; /* Space between the name and the button */
-    font-size: 0.9em; /* Smaller font size */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-left: 10px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-    background-color: #00509E; /* Lighter shade on hover */
+    background-color: #00509E;
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .about-me-content {
-        flex-direction: column; /* Stack the content vertically */
-        align-items: center; /* Center the content */
+        flex-direction: column;
+        align-items: center;
     }
 
     .github-activity-aboutme {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 20px; /* Space below the GitHub activity */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .about-me-image {
-        width: 90%; /* Make the image responsive */
+        width: 90%;
     }
 }
 
 .graph-container {
-    text-align: center; /* Center the graph */
-    margin-top: 20px; /* Space above the graph */
-    padding: 10px 0; /* Padding for better spacing (top and bottom) */
-    background-color: #e0e0e0; /* Light gray background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .graph-image {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 8px; /* Rounded corners */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
