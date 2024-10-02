@@ -101,52 +101,6 @@ li {
     background-color: #004d7f; /* Darker blue on hover */
 }
 
-.about-me {
-    margin: 20px 0; /* Spacing above and below the section */
-}
-
-.about-me h2 {
-    color: #002b5c; /* Heading color */
-    margin-bottom: 15px; /* Space below the heading */
-}
-
-.about-me-content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between items */
-}
-
-.github-activity-aboutme {
-    background-color: #e0e0e0; /* Match contact bar color */
-    padding: 15px; /* Padding for the box */
-    border-radius: 8px; /* Rounded corners */
-    flex: 1; /* Allow this to take available space */
-    margin: 0 20px; /* Horizontal margins */
-}
-
-.github-activity-aboutme .graph-image {
-    width: 100%; /* Make the graph responsive */
-}
-
-.about-me-image-container {
-    flex: 1; /* Allow this to take available space */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the image */
-    align-items: center; /* Center vertically */
-    margin-top: 20px; /* Add some spacing */
-}
-
-.about-me-image {
-    width: 200px; /* Adjust width as necessary */
-    height: auto; /* Keep aspect ratio */
-    border: 3px solid #002b5c; /* University of Pittsburgh blue border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s; /* Smooth scaling effect */
-}
-
-.about-me-image:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
 
 .contact-info p {
     margin: 0; /* Remove default margin */
