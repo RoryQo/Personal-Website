@@ -20,7 +20,7 @@ h2, h3, h4 {
     text-align: center; /* Center the text */
     margin-bottom: 20px; /* Space below the contact info */
     padding: 10px 0; /* Padding for better spacing (top and bottom) */
-    background-color: #d3d3d3; /* Light gray background color */
+    background-color: #e0e0e0; /* Light gray background color */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     font-size: 1em; /* Ensure consistent font size */
