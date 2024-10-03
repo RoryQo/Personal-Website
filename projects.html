@@ -3,133 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rory Quinlan's portfolio showcasing data science projects and skills.">
     <title>Projects - Rory Quinlan's Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Rory Quinlan</h1>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="education.html">Education</a>
-            <a href="experience.html">Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="All.html">All Sections</a>
-        </nav>
-    </header>
-    
+    <h1>Rory Quinlan</h1>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="All.html">All Sections</a>
+    </div>
     <div class="contact-info">
-        <p>
-            💻 <a href="https://github.com/Roryqo">GitHub</a> |
-            🔗 <a href="https://www.linkedin.com/in/rory-quinlan">LinkedIn</a> |
-            📧 <a href="mailto:RoryQo@gmail.com">RoryQo@gmail.com</a> |
-            📄 <a href="https://github.com/RoryQo/Personal-Website/raw/main/resume.pdf" download>Download Resume</a>
+        <p>💻 <a href="https://github.com/Roryqo">GitHub</a> | 
+           🔗 <a href="https://www.linkedin.com/in/rory-quinlan">LinkedIn</a> | 
+           📧 <a href="mailto:RoryQo@gmail.com">RoryQo@gmail.com</a> | 
+           📄 <a href="https://github.com/RoryQo/Personal-Website/raw/main/resume.pdf" download>Download Resume</a>
         </p>
     </div>
 
-    <main class="section" id="projects">
-        <h2>Projects</h2>
+    <div class="section" id="projects">
+        <h2>PROJECTS</h2>
         <div class="content-wrapper">
-            <div class="projects-content">
+            <article>
+                <h3>Tuition Variation Model, Undergraduate Research Capstone</h3>
+                <p><strong>Project Summary:</strong> Developed a predictive model in R to analyze tuition rates for public and private universities in the U.S., utilizing various metrics to explain tuition variability.</p>
+                <p><strong>Technologies Used:</strong> R, Linear Regression, Data Visualization</p>
+                <p><strong>Role:</strong> Lead Developer</p>
+                <p><strong>Detailed Description:</strong></p>
+                <ul>
+                    <li><strong>Problem Statement:</strong> Understanding the factors that influence tuition rates across different universities.</li>
+                    <li><strong>Solution:</strong> Created a linear regression model to predict tuition variability.</li>
+                    <li><strong>Process:</strong>
+                        <ul>
+                            <li>Collected data from three public datasets covering 60 universities.</li>
+                            <li>Conducted data wrangling to address missing values.</li>
+                            <li>Validated the model using leave-one-out cross-validation (LOOCV).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Results and Impact:</strong> Achieved over 85% of variability in tuition rates accounted for, identifying national ranking as a significant predictor.</p>
+                <p><strong>Challenges Faced:</strong> Managed data quality issues during collection and cleaning.</p>
+                <p><strong>Future Improvements:</strong> Explore the inclusion of additional factors like financial aid offerings.</p>
+                <div class="button-container">
+                    <a href="https://github.com/RoryQo/R-Tuition-Variation-Research" class="button" target="_blank">View on GitHub</a>
+                    <a href="https://github.com/RoryQo/Personal-Website/raw/main/Paying%20for%20Prestige.pdf" class="button" download>Download Full Research Paper</a>
+                </div>
+            </article>
 
-                <article>
-                    <h3>Tuition Variation Model, Undergraduate Research Capstone</h3>
-                    <ul>
-                        <li>Developed a predictive model in R to analyze tuition rates for public and private four-year universities in the U.S., utilizing institutional, quality of life, and crime metrics to explain tuition variability.</li>
-                        <li>Achieved over 85% of variability in tuition rates accounted for, with national ranking identified as the most significant predictor, demonstrating that prestigious institutions leverage their rankings to charge higher tuition.</li>
-                        <li>Collected data from three public datasets encompassing 60 observations from top U.S. universities, including metrics such as institutional control, national rank, and median income.</li>
-                        <li>Constructed a comprehensive linear regression model, employing leave-one-out cross-validation (LOOCV) to validate predictive capabilities and ensure robustness against overfitting.</li>
-                        <li>Conducted thorough data wrangling to clean and prepare datasets, addressing missing values and ensuring appropriate variable encoding.</li>
-                        <li>Applied the model to the University of Pittsburgh, revealing that out-of-state students pay approximately $9,000 above expected tuition, highlighting the model's practical applicability for prospective students assessing educational investments.</li>
-                    </ul>
-                    <div class="button-container">
-                        <a href="https://github.com/RoryQo/Personal-Website/raw/main/Paying%20for%20Prestige.pdf" class="button" download>Download Full Research Paper</a>
-                        <a href="https://github.com/RoryQo/R-Tuition-Variation-Research" class="button" target="_blank">View on GitHub</a>
-                    </div>
-                </article>
+            <article>
+                <h3>Navigating Inflation: A Custom CPI Analysis for College Students, Course Research Capstone</h3>
+                <p><strong>Project Summary:</strong> Analyzed the Consumer Price Index (CPI) for college students, creating a custom CPI calculation based on essential products and services.</p>
+                <p><strong>Technologies Used:</strong> R, Data Analysis, API Retrieval</p>
+                <p><strong>Role:</strong> Research Analyst</p>
+                <p><strong>Detailed Description:</strong></p>
+                <ul>
+                    <li><strong>Problem Statement:</strong> Traditional CPI does not accurately reflect college students' consumption patterns.</li>
+                    <li><strong>Solution:</strong> Developed a custom CPI to better reflect the costs that impact students.</li>
+                    <li><strong>Process:</strong>
+                        <ul>
+                            <li>Collected price data through API for three U.S. regions over five years.</li>
+                            <li>Implemented functions to calculate inflation rates based on the custom CPI.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Results and Impact:</strong> Highlighted significant inflation trends affecting college students, particularly in essential categories.</p>
+                <p><strong>Challenges Faced:</strong> Encountered limitations with data availability for specific items.</p>
+                <p><strong>Future Improvements:</strong> Consider expanding the analysis to include more product categories and regions.</p>
+                <div class="button-container">
+                    <a href="https://github.com/RoryQo/Create-a-CPI-Mini-Research" class="button" target="_blank">View on GitHub</a>
+                </div>
+            </article>
 
-                <article>
-                    <h3>Navigating Inflation: A Custom CPI Analysis for College Students, Course Research Capstone</h3>
-                    <ul>
-                        <li>Analyzed the Consumer Price Index (CPI) specifically for college students by evaluating essential products and services they typically consume, resulting in a custom CPI calculation based on selected items and their respective weights across different U.S. regions.</li>
-                        <li>Collected price data through API retrieval for three regions (Northeast, Midwest, South) covering a five-year period (January 2017 to January 2022) to support the CPI calculations.</li>
-                        <li>Implemented functions to calculate inflation rates based on the custom CPI, facilitating insights into the sensitivity of student-related expenses to inflation changes.</li>
-                        <li>Conducted a comprehensive analysis highlighting that while the custom CPI is less robust than the general CPI, it captures inflation trends that significantly affect college students, particularly for essential items like gas, recreation, and rent.</li>
-                        <li>Developed a comparative graph visualizing inflation rates of the custom CPI against the general CPI over various lag periods, emphasizing the differing experiences of college students compared to the broader population.</li>
-                    </ul>
-                    <div class="button-container">
-                        <a href="https://github.com/RoryQo/Create-a-CPI-Mini-Research" class="button" target="_blank">View on GitHub</a>
-                    </div>
-                </article>
+            <article>
+                <h3>Age Correlation in Married Couples, Bayesian Analysis Project</h3>
+                <p><strong>Project Summary:</strong> Analyzed the relationship between the ages of husbands and wives using data from 100 sampled U.S. married couples.</p>
+                <p><strong>Technologies Used:</strong> R, Bayesian Analysis, MCMC</p>
+                <p><strong>Role:</strong> Data Analyst</p>
+                <p><strong>Detailed Description:</strong></p>
+                <ul>
+                    <li><strong>Problem Statement:</strong> Understanding age dynamics in marriages.</li>
+                    <li><strong>Solution:</strong> Utilized Bayesian methods to analyze age correlation.</li>
+                    <li><strong>Process:</strong>
+                        <ul>
+                            <li>Generated predictive datasets through random sampling.</li>
+                            <li>Employed MCMC methods to estimate mean ages and correlation coefficients.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Results and Impact:</strong> Demonstrated narrower confidence intervals using Bayesian methods, showcasing their effectiveness.</p>
+                <p><strong>Challenges Faced:</strong> Required a solid understanding of Bayesian statistics for accurate implementation.</p>
+                <p><strong>Future Improvements:</strong> Explore larger datasets for broader analysis.</p>
+                <div class="button-container">
+                    <a href="https://github.com/RoryQo/R-Age-Correlation-in-Married-Couples-Bayesian-Analysis-Mini-Project" class="button" target="_blank">View on GitHub</a>
+                </div>
+            </article>
 
-                <article>
-                    <h3>Age Correlation in Married Couples, Bayesian Analysis Project</h3>
-                    <ul>
-                        <li>Analyzed the relationship between the ages of husbands and wives using data from 100 sampled U.S. married couples, aiming to hypothesize a semiconjugate prior.</li>
-                        <li>Generated predictive datasets through random sampling from established distributions, confirming a strong positive correlation between the ages.</li>
-                        <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient, creating new confidence intervals for both.</li>
-                        <li>Demonstrated that the Bayesian approach provided narrower confidence intervals for average ages, reducing them by over a year compared to frequentist methods.</li>
-                        <li>Highlighted the advantages of Bayesian methods in estimating correlations, achieving a 2% reduction in the correlation coefficient's confidence interval.</li>
-                        <li>Utilized R for data analysis, focusing on visualizing relationships and employing statistical techniques to enhance the reliability of findings on age dynamics in marriages.</li>
-                    </ul>
-                    <div class="button-container">
-                        <a href="https://github.com/RoryQo/R-Age-Correlation-in-Married-Couples-Bayesian-Analysis-Mini-Project" class="button" target="_blank">View on GitHub</a>
-                    </div>
-                </article>
+            <article>
+                <h3>Country Needs Assessment for Humanitarian Aid, Data Science Mini Project</h3>
+                <p><strong>Project Summary:</strong> Analyzed socio-economic and health indicators to identify countries most in need of humanitarian assistance.</p>
+                <p><strong>Technologies Used:</strong> R, PCA, Clustering</p>
+                <p><strong>Role:</strong> Data Scientist</p>
+                <p><strong>Detailed Description:</strong></p>
+                <ul>
+                    <li><strong>Problem Statement:</strong> Assessing humanitarian needs based on various indicators.</li>
+                    <li><strong>Solution:</strong> Used PCA and clustering to categorize countries by urgency of aid.</li>
+                    <li><strong>Process:</strong>
+                        <ul>
+                            <li>Conducted correlation analysis to identify key factors.</li>
+                            <li>Determined optimal clusters using PAM clustering.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Results and Impact:</strong> Identified critical areas for intervention, helping NGOs prioritize their efforts.</p>
+                <p><strong>Challenges Faced:</strong> Managing data discrepancies across various indicators.</p>
+                <p><strong>Future Improvements:</strong> Incorporate additional health metrics for a more comprehensive analysis.</p>
+                <div class="button-container">
+                    <a href="https://github.com/RoryQo/R-Country-Needs-Assessment-for-Humanitarian-Aid-Mini-Project" class="button" target="_blank">View on GitHub</a>
+                </div>
+            </article>
 
-                <article>
-                    <h3>Country Needs Assessment for Humanitarian Aid, Data Science Mini Project</h3>
-                    <ul>
-                        <li>Analyzed socio-economic and health indicators to categorize countries most in need of humanitarian assistance for NGOs.</li>
-                        <li>Conducted a correlation analysis and utilized Principal Component Analysis (PCA) to identify key factors affecting country development, including child mortality, income, life expectancy, and health expenditure.</li>
-                        <li>Determined three optimal clusters through clustering techniques, finding that Partitioning Around Medoids (PAM) clustering outperformed K-means due to its resilience to outliers.</li>
-                        <li>Identified Cluster 1, comprising 51 countries with the most critical needs, highlighting urgent areas for intervention, such as high child mortality and low average income.</li>
-                        <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities and underscoring the need for targeted interventions in Cluster 1.</li>
-                        <li>Developed an R workflow for data analysis, including loading libraries, performing exploratory data analysis, and executing clustering methods to assess humanitarian needs.</li>
-                    </ul>
-                    <div class="button-container">
-                        <a href="https://github.com/RoryQo/R-Country-Needs-Assessment-for-Humanitarian-Aid-Mini-Project" class="button" target="_blank">View on GitHub</a>
-                    </div>
-                </article>
+            <article>
+                <h3>Credit Risk Assessment Model, Data Science Project</h3>
+                <p><strong>Project Summary:</strong> Developed a logistic regression model to predict credit risk based on customer attributes.</p>
+                <p><strong>Technologies Used:</strong> Python, Pandas, scikit-learn</p>
+                <p><strong>Role:</strong> Data Analyst</p>
+                <p><strong>Detailed Description:</strong></p>
+                <ul>
+                    <li><strong>Problem Statement:</strong> Banks need efficient methods to assess potential credit risks.</li>
+                    <li><strong>Solution:</strong> Created a model to predict credit risk from customer data.</li>
+                    <li><strong>Process:</strong>
+                        <ul>
+                            <li>Managed data preprocessing, including handling missing values.</li>
+                            <li>Achieved approximately 78% accuracy in predictions.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Results and Impact:</strong> Enabled early identification of high-risk customers, enhancing lending decisions.</p>
+                <p><strong>Challenges Faced:</strong> Balancing model accuracy with interpretability for stakeholders.</p>
+                <p><strong>Future Improvements:</strong> Explore alternative modeling techniques for enhanced accuracy.</p>
+                <div class="button-container">
+                    <a href="https://github.com/RoryQo/Credit-Risk-Assesment-Mini-Project" class="button" target="_blank">View on GitHub</a>
+                </div>
+            </article>
 
-                <article>
-                    <h3>Credit Risk Assessment Model, Data Science Project</h3>
-                    <ul>
-                        <li>Analyzed customer attributes to predict credit risk using logistic regression, enhancing banks' ability to assess potential credit risks efficiently.</li>
-                        <li>Managed data preprocessing, handling missing values and converting categorical variables to dummy variables to prepare the dataset for analysis.</li>
-                        <li>Developed a comprehensive model achieving approximately 78% accuracy, allowing early identification of high-risk customers based on readily available information.</li>
-                        <li>Utilized two datasets, incorporating features such as age, gender, job type, and credit amount, to train and evaluate the model.</li>
-                        <li>Created visualizations, including pie charts and scatterplots, to understand credit risk distributions and relationships among variables effectively.</li>
-                        <li>Implemented a workflow in Python, utilizing libraries like pandas and scikit-learn, to conduct exploratory data analysis, visualize results, and train the logistic regression model.</li>
-                    </ul>
-                    <div class="button-container">
-                        <a href="https://github.com/RoryQo/Credit-Risk-Assesment-Mini-Project" class="button" target="_blank">View on GitHub</a>
-                    </div>
-                </article>
-
-                <article>
-                    <h3>Students' Adaptability to Online Learning, Data Science Project</h3>
-                    <ul>
-                        <li>Investigated students' adaptability to online learning by applying data wrangling, visualization, and machine learning techniques to understand key influencing factors and predict adaptability levels.</li>
-                        <li>Achieved approximately 93% accuracy in predicting adaptability using advanced machine learning models, including non-linear Support Vector Machine (SVM) and Random Forest, outperforming basic models like Naive Bayes.</li>
-                        <li>Identified significant factors influencing adaptability, such as age, class duration, gender, and education level, while finding device type and load-shedding to be less influential.</li>
-                        <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors, enhancing understanding of student adaptability.</li>
-                        <li>Prepared data by encoding categorical variables, scaling features, and conducting hyperparameter tuning to optimize model performance for accuracy, precision, and recall.</li>
-                    </ul>
-                    <div class="button-container">
-                        <a href="https://github.com/RoryQo/Student-Online-Learning-Adaptability-Project" class="button" target="_blank">View on GitHub</a>
-                    </div>
-                </article>
-
-            </div>
+            <article>
+                <h3>Students' Adaptability to Online Learning, Data Science Project</h3>
+                <p><strong>Project Summary:</strong> Investigated students' adaptability to online learning using machine learning techniques.</p>
+                <p><strong>Technologies Used:</strong> Python, Machine Learning, Data Visualization</p>
+                <p><strong>Role:</strong> Lead Data Scientist</p>
+                <p><strong>Detailed Description:</strong></p>
+                <ul>
+                    <li><strong>Problem Statement:</strong> Understanding factors influencing students' adaptability in online settings.</li>
+                    <li><strong>Solution:</strong> Developed predictive models to analyze adaptability levels.</li>
+                    <li><strong>Process:</strong>
+                        <ul>
+                            <li>Achieved approximately 93% accuracy with advanced models.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Results and Impact:</strong> Identified key factors affecting adaptability, aiding educators in addressing challenges.</p>
+                <p><strong>Challenges Faced:</strong> Balancing model complexity with interpretability.</p>
+                <p><strong>Future Improvements:</strong> Expand the dataset for more diverse insights.</p>
+                <div class="button-container">
+                    <a href="https://github.com/RoryQo/Student-Online-Learning-Adaptability-Project" class="button" target="_blank">View on GitHub</a>
+                </div>
+            </article>
         </div>
-    </main>
-    
-    <footer>
         <a href="index.html">Back to Home</a>
-    </footer>
+    </div>
 </body>
 </html>
