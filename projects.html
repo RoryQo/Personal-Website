@@ -109,19 +109,20 @@
         <div style="background-color: #f8f8f8; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
 <code>
 def myinflation(lag):
-    """Compute the percent change in the level 
-    of myCPI for the 12 months starting '12+lag' 
+    """Compute the percent change in the level of myCPI for <br>the 12 months starting '12+lag' 
     months ago and ending 'lag' months ago.
-    
-    Args:
+    <br>
+    <br>
+    Args:<br>
         lag (int): The number of months lag.
-    
-    Returns:
-        float: Percent change in CPI.
-    """
-    new = mycpi[lag]
-    old = mycpi[12 + lag]
-    change = (new / old - 1) * 100
+    <br>
+    <br>
+    Returns:<br>
+        float: Percent change in CPI.<br>
+    """<br>
+    new = mycpi[lag]<br>
+    old = mycpi[12 + lag]<br>
+    change = (new / old - 1) * 100<br>
     return change
 </code>
         </pre>
