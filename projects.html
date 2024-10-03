@@ -98,9 +98,10 @@
                         <li><strong>Solution:</strong> Utilized Bayesian methods to analyze age correlation.</li>
                         <li><strong>Process:</strong>
                             <ul>
-                                <li>Gathered data from a sample of 100 married couples, recording their ages.</li>
-                                <li>Explored various distributions to determine the best fit for age data.</li>
-                                <li>Generated predictive datasets through random sampling from established distributions, confirming a strong positive correlation between ages.</li>
+                                
+                                <li>Hypothesized an Inverse Wishart distribution for variance and a Multivariate Normal distribution for the mean.<li>
+                                <li>Generated predictive datasets through random sampling from hypothesized distributions, confirming a strong positive correlation between ages.</li>
+                                <li>Confirmed our hypothesis by comparing predictive datasets through scatter plots to the original data, demonstrating that they exhibited the same relationship.<li>
                                 <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient.</li>
                                 <li>Created confidence intervals for both estimates, demonstrating the advantages of Bayesian methods over traditional approaches.</li>
                             </ul>
@@ -126,11 +127,13 @@
                         <li><strong>Solution:</strong> Used PCA and clustering to categorize countries by urgency of aid.</li>
                         <li><strong>Process:</strong>
                             <ul>
-                                <li>Collected data on socio-economic and health indicators from reliable sources.</li>
+                                
                                 <li>Conducted correlation analysis to identify key factors affecting country development, such as child mortality and income levels.</li>
                                 <li>Applied Principal Component Analysis (PCA) to reduce dimensionality and extract significant features from the dataset.</li>
-                                <li>Determined three optimal clusters using clustering techniques, comparing the effectiveness of Partitioning Around Medoids (PAM) with K-means.</li>
+                                <li>Implemented clustering techniques, comparing the effectiveness of Partitioning Around Medoids (PAM) with K-means to categorize countries based on urgency of aid</li>
+                                <li>Utilized the Elbow Method and Silhouette Analysis to determine the optimal number of clusters</li>
                                 <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities.</li>
+                                <li>Established a systematic workflow for data collection, preprocessing, analysis, and visualization, ensuring reproducibility and efficiency in assessing humanitarian needs. <li>
                             </ul>
                         </li>
                     </ul>
@@ -183,11 +186,12 @@
                         <li><strong>Process:</strong>
                             <ul>
                                 <li>Applied data wrangling techniques to prepare the dataset for analysis, including encoding categorical variables and scaling features.</li>
-                                <li>Utilized advanced machine learning models, with TensorFlow, created Support Vector Machine (SVM), and Random Forest, achieving approximately 93% accuracy in predictions.</li>
-                                <li>Identified significant factors influencing adaptability, such as age, class duration, gender, and education level.</li>
-                                <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors, enhancing understanding of student adaptability.</li>
-                            </ul>
-                        </li>
+                                <li>Utilized advanced machine learning models, including Support Vector Machine (SVM) and Random Forest, achieving approximately 93% accuracy in predictions.</li>
+                                <li>Conducted feature selection to identify significant factors influencing adaptability, such as age, class duration, gender, and education level.</li>
+                                <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors.</li>
+                                <li>Developed and validated predictive models to analyze students' adaptability to online learning environments.</li>
+                                <li>Explored the impact of various educational tools and methods on student performance in online settings.</li>
+                        
                     </ul>
                     <p><strong>Results and Impact:</strong> Identified key factors affecting adaptability, aiding educators in addressing challenges.</p>
                     <p><strong>Challenges Faced:</strong> Balancing model complexity with interpretability.</p>
