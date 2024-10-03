@@ -32,17 +32,17 @@
             <div class="about-me-text-container" style="flex: 4; margin-right: 20px; background-color: #ffffff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                 <h2 style="color: #002b5c; margin-bottom: 15px; font-size: 1.5em;">About Me</h2>
                 
-<p style="font-size: 0.975em;">I’m currently pursuing a Master of Science in Quantitative Economics at the University of Pittsburgh, where I also earned my Bachelor’s degree in Statistics and Economics. With a strong foundation in data science, I thrive on extracting patterns from complex data.</p>
+                <p style="font-size: 0.975em;">I’m currently pursuing a Master of Science in Quantitative Economics at the University of Pittsburgh, where I also earned my Bachelor’s degree in Statistics and Economics. With a strong foundation in data science, I thrive on extracting patterns from complex data.</p>
 
-<p style="font-size: 0.975em;">Throughout my academic journey, I have engaged in various projects that have honed my analytical skills and deepened my understanding of economic trends and data science. My undergraduate research capstone involved developing a predictive model for tuition rates at four-year universities, analyzing key institutional metrics that influence costs, and emphasizing the importance of informed decision-making for prospective students regarding their educational investments. Additionally, I conducted a research project on the Consumer Price Index (CPI) specifically for college students, evaluating essential products and services to create a customized CPI that reflects their unique financial experiences. These experiences have enhanced my technical skills and reinforced my passion for approaching real-world economic challenges through rigorous analysis.</p>
+                <p style="font-size: 0.975em;">Throughout my academic journey, I have engaged in various projects that have honed my analytical skills and deepened my understanding of economic trends and data science. My undergraduate research capstone involved developing a predictive model for tuition rates at four-year universities, analyzing key institutional metrics that influence costs, and emphasizing the importance of informed decision-making for prospective students regarding their educational investments. Additionally, I conducted a research project on the Consumer Price Index (CPI) specifically for college students, evaluating essential products and services to create a customized CPI that reflects their unique financial experiences. These experiences have enhanced my technical skills and reinforced my passion for approaching real-world economic challenges through rigorous analysis.</p>
 
-<p style="font-size: 0.975em;">In my professional experience, I have worked as a Peer Financial Educator and an Undergraduate Research Assistant, where I focused on analyzing survey data, enhancing the understanding of financial behaviors among students, and contributing to impactful workshops. My analysis work has allowed me to empower others with knowledge and improve financial literacy.</p>
+                <p style="font-size: 0.975em;">In my professional experience, I have worked as a Peer Financial Educator and an Undergraduate Research Assistant, where I focused on analyzing survey data, enhancing the understanding of financial behaviors among students, and contributing to impactful workshops. My analysis work has allowed me to empower others with knowledge and improve financial literacy.</p>
 
-<p style="font-size: 0.975em;">When I’m not immersed in data, you can find me advocating for shark conservation and supporting organizations like Saving the Blue. I believe that data-driven insights are essential for combating environmental challenges and fostering a sustainable future.</p>
+                <p style="font-size: 0.975em;">When I’m not immersed in data, you can find me advocating for shark conservation and supporting organizations like Saving the Blue. I believe that data-driven insights are essential for combating environmental challenges and fostering a sustainable future.</p>
 
-<p style="font-size: 0.975em;">Feel free to contact me through my GitHub or LinkedIn profiles. I look forward to connecting!</p>
+                <p style="font-size: 0.975em;">Feel free to contact me through my GitHub or LinkedIn profiles. I look forward to connecting!</p>
 
- </div>
+            </div>
 
             <div class="github-activity-aboutme" style="background-color: #e0e0e0; padding: 15px; border-radius: 8px; flex: 2; margin: 0 20px;">
                 <h2 style="font-size: 1.5em;color: #002b5c;">GitHub Activity</h2>
@@ -54,10 +54,9 @@
                 </a>
             
                 <a href="https://github.com/Roryqo">
-                   <img src="https://github-readme-stats.vercel.app/api?username=roryqo&show_icons=true&theme=light&hide=prs,issues&card_width=400&custom_title=Rory's%20Stats&timestamp=<?= time() ?>" 
-     alt="Rory's GitHub stats" 
-     style="width: 100%; background-color: #ffffff; border-radius: 8px; margin-top: 10px; transition: transform 0.3s, border 0.3s;">
-
+                   <img id="github-stats" 
+                        alt="Rory's GitHub stats" 
+                        style="width: 100%; background-color: #ffffff; border-radius: 8px; margin-top: 10px; transition: transform 0.3s, border 0.3s;">
                 </a>
             </div>
             <div class="about-me-image-container" style="flex: 1;">
@@ -83,6 +82,11 @@
                 image.style.border = 'none'; // Remove border on mouse out
             });
         });
+
+        // Dynamic GitHub stats image URL
+        const githubStats = document.getElementById('github-stats');
+        const username = 'roryqo';
+        githubStats.src = `https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=light&hide=prs,issues&card_width=400&custom_title=Rory's%20Stats&timestamp=${Date.now()}`;
     </script>
 </body>
 </html>
