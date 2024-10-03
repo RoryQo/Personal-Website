@@ -5,10 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Rory Quinlan's Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .section {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        h3 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: square;
+            margin: 10px 0 20px 20px;
+        }
+        a.back-home {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
 </head>
 <body>
     <h1>Rory Quinlan</h1>
-     <div class="navbar">
+    <div class="navbar">
         <a href="index.html">Home</a>
         <a href="education.html">Education</a>
         <a href="experience.html">Experience</a>
@@ -16,8 +76,8 @@
         <a href="skills.html">Skills</a>
         <a href="certifications.html">Certifications</a>
         <a href="All.html">All Sections</a>
-        
     </div>
+
     <div class="contact-info">
         <p>💻 <a href="https://github.com/Roryqo">GitHub</a> | 
            🔗 <a href="https://www.linkedin.com/in/rory-quinlan">LinkedIn</a> | 
@@ -28,57 +88,59 @@
 
     <div class="section" id="skills">
         <h2>TECHNICAL SKILLS</h2>
-    <h3>Programming Languages:</h3>
-    <ul>
-        <li>R</li>
-        <li>Python</li>
-        <li>SQL</li>
-    </ul>
 
-    <h3>Statistical Analysis:</h3>
-    <ul>
-        <li>Regression Analysis</li>
-        <li>Bayesian Analysis</li>
-        <li>Time Series Analysis</li>
-        <li>Principal Component Analysis</li>
-        <li>A/B Testing</li>
-        <li>ANOVA (Analysis of Variance)</li>
-        <li>Stochastic Processes</li>
-    </ul>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>R</li>
+            <li>Python</li>
+            <li>SQL</li>
+        </ul>
 
-    <h3>Data Analysis & Visualization:</h3>
-    <ul>
-        <li>Data Wrangling</li>
-        <li>Exploratory Data Analysis (EDA)</li>
-        <li>Matplotlib</li>
-        <li>Seaborn</li>
-        <li>ggplot2</li>
-    </ul>
+        <h3>Statistical Analysis</h3>
+        <ul>
+            <li>Regression Analysis</li>
+            <li>Bayesian Analysis</li>
+            <li>Time Series Analysis</li>
+            <li>Principal Component Analysis</li>
+            <li>A/B Testing</li>
+            <li>ANOVA (Analysis of Variance)</li>
+            <li>Stochastic Processes</li>
+        </ul>
 
-    <h3>Machine Learning:</h3>
-    <ul>
-        <li>Logistic Regression</li>
-        <li>Random Forest</li>
-        <li>Support Vector Machines (SVM)</li>
-        <li>Naive Bayes</li>
-        <li>K-means Clustering</li>
-        <li>Neural Networks</li>
-    </ul>
+        <h3>Data Analysis & Visualization</h3>
+        <ul>
+            <li>Data Wrangling</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>ggplot2</li>
+        </ul>
 
-    <h3>Data Manipulation and Modeling Tools:</h3>
-    <ul>
-        <li>RMarkdown</li>
-        <li>Pandas</li>
-        <li>Tensor Flow</li>
-        <li>Scikit-learn</li>
-        <li>NumPy</li>
-        <li>dplyr</li>
-        <li>tidyverse</li>
-        <li>Excel</li>
-    </ul>
-</div>
+        <h3>Machine Learning</h3>
+        <ul>
+            <li>Logistic Regression</li>
+            <li>Random Forest</li>
+            <li>Support Vector Machines (SVM)</li>
+            <li>Naive Bayes</li>
+            <li>K-means Clustering</li>
+            <li>Neural Networks</li>
+        </ul>
 
+        <h3>Data Manipulation and Modeling Tools</h3>
+        <ul>
+            <li>RMarkdown</li>
+            <li>Pandas</li>
+            <li>TensorFlow</li>
+            <li>Scikit-learn</li>
+            <li>NumPy</li>
+            <li>dplyr</li>
+            <li>tidyverse</li>
+            <li>Excel</li>
+        </ul>
 
-    <a href="index.html">Back to Home</a>
+       
+    </div>
+
+    <a href="index.html" class="back-home">Back to Home</a>
 </body>
 </html>
