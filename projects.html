@@ -6,6 +6,18 @@
     <title>Projects - Rory Quinlan's Resume</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        .back-to-top {
+            display: inline-block;
+            background-color: #007BFF; /* Match your blue color scheme */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .back-to-top:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
         img {
             transition: transform 0.3s ease; /* Smooth transition */
         }
@@ -310,6 +322,7 @@ best_k = classifier.best_estimator_.get_params()["knn__n_neighbors"]
 
         </div>
         <a href="index.html">Back to Home</a>
+     <a href="#top" class="back-to-top">Back to Top</a>
     </div>
 </body>
 </html>
