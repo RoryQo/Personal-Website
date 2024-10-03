@@ -133,25 +133,25 @@ def myinflation(lag):
             <div class="project-box"  id="age-correlation" style="background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
                 <article>
                     <h3>Age Correlation in Married Couples, Bayesian Analysis Project</h3>
-                    <p><strong>Project Summary:</strong> Utilized Bayesian methods to analyze the relationship between the ages of husbands and wives, from 100 sampled U.S. married couples. This approach enhanced the usability of the analysis by providing more reliable estimates and narrower confidence intervals, surpassing the limitations of traditional methods.</p>
+                    <p><strong>Project Summary:</strong> Utilized Bayesian methods to analyze the relationship between the ages of husbands and wives, from 100 <br>sampled U.S. married couples. This approach enhanced the usability of the analysis by providing more reliable estimates and narrower <br>confidence intervals, surpassing the limitations of traditional methods.</p>
                     <p><strong>Technologies Used:</strong> R, Bayesian Analysis, Stochastic Processes (MCMC), rstan (for Bayesian modeling)</p>
                     <p><strong>Detailed Description:</strong></p>
                     <ul>
-                         <li><strong>Problem Statement:</strong> Due to limited data, traditional methods yielded wide confidence intervals, making it challenging to accurately understand age dynamics in marriages.</li>
+                         <li><strong>Problem Statement:</strong> Due to limited data, traditional methods yielded wide confidence intervals, making it challenging <br>to accurately understand age dynamics in marriages.</li>
                         <li><strong>Solution:</strong> Utilized Bayesian methods to analyze age correlation.</li>
                         <li><strong>Process:</strong>
                             <ul>
                                 
                                 <li>Hypothesized an Inverse Wishart distribution for variance and a Multivariate Normal distribution for the mean.</li>
-                                <li>Generated predictive datasets through random sampling from hypothesized distributions, confirming a strong positive correlation between ages.</li>
-                                <li>Confirmed our hypothesis by comparing predictive datasets through scatter plots to the original data, demonstrating that they exhibited the same relationship.</li>
+                                <li>Generated predictive datasets through random sampling from hypothesized distributions, confirming a strong positive <br>correlation between ages.</li>
+                                <li>Confirmed our hypothesis by comparing predictive datasets through scatter plots to the original data, demonstrating that <br>they exhibited the same relationship.</li>
                                 <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient.</li>
                                 <li>Created confidence intervals for both estimates, demonstrating the advantages of Bayesian methods over traditional approaches.</li>
                                 
                             </ul>
                         </li>
                     </ul>
-                    <p><strong>Results and Impact:</strong> The limited sample size and lack of prior information about the variables resulted in relatively wide confidence intervals using standard frequentist approaches. In contrast, the Bayesian method reduced the confidence interval for the average ages of husbands and wives by over a year, while the confidence interval for the correlation coefficient was narrowed by 2% compared to the frequentist method at the same alpha level. These findings underscore the advantages of Bayesian methods, particularly in providing narrower confidence intervals and more accurate estimations of correlations. By effectively leveraging prior information, the Bayesian approach significantly enhances the reliability of our analysis regarding age dynamics in marriages.</p>
+                    <p><strong>Results and Impact:</strong> The limited sample size and lack of prior information about the variables resulted in relatively wide confidence intervals using <br>standard frequentist approaches. In contrast, the Bayesian method reduced the confidence interval for <br>the average ages of husbands and wives by over a year, while the confidence interval for the <br>correlation coefficient was narrowed by 2% compared to the frequentist method at the same alpha level. These findings <br>underscore the advantages of Bayesian methods, particularly in providing narrower confidence intervals and more <br>accurate estimations of correlations. By effectively leveraging prior information, <br>the Bayesian approach significantly enhances the reliability of our analysis regarding age dynamics in marriages.</p>
                     <p><strong>Challenges Faced:</strong> Required a solid understanding of Bayesian statistics for accurate implementation.</p>
                     <p><strong>Future Improvements:</strong> Explore larger datasets for broader analysis.</p>
                     <div class="button-container">
