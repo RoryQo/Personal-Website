@@ -289,6 +289,23 @@ for(i in 1:s){
                         <a href="https://github.com/RoryQo/Student-Online-Learning-Adaptability-Project" class="button" target="_blank">View on GitHub</a>
                     </div>
                 </article>
+                <div style="width: 500px; margin-left: 15px; display: flex; flex-direction: column;">
+        <h4>Code Snippet:</h4>
+        <div style="background-color: #f8f8f8; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+<code>
+# Consider 10 different values of K<br>
+search_space = [{"knn__n_neighbors": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}]<br>
+<br>
+# Create search with parameters and set 5 fold cross validation<br>
+classifier = GridSearchCV(<br>
+    pipe, search_space, cv=5, verbose=0).fit(X_train, y_train)<br>
+<br>
+# Calculate best estimator<br>
+best_k = classifier.best_estimator_.get_params()["knn__n_neighbors"]
+    
+</code>
+        </pre>
+    </div>
             </div>
 
         </div>
