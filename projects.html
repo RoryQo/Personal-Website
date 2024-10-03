@@ -77,8 +77,8 @@
             
 </div>
 
-            <div class="project-box" id="cpi-analysis" style="background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-                <article>
+            <div class="project-box" id="cpi-analysis" style="background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 8px; padding: 15px; margin-bottom: 20px; display: flex; align-items: center;">
+    <article style="flex: 1;">
                     <h3>Navigating Inflation: A Custom CPI Analysis for College Students, Course Research Capstone</h3>
                     <p><strong>Project Summary:</strong> Analyzed the Consumer Price Index (CPI) for college students, creating a custom CPI calculation based on essential products and services.</p>
                     <p><strong>Technologies Used:</strong> Python, API Data Retrieval, pandas, numpy</p>
@@ -102,6 +102,24 @@
                     <div class="button-container">
                         <a href="https://github.com/RoryQo/Create-a-CPI-Mini-Research" class="button" target="_blank">View on GitHub</a>
                     </div>
+        <pre style="background-color: #f8f8f8; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+<code>
+def myinflation(lag):
+    """Compute the percent change in the level of myCPI for the 
+    12 months starting '12+lag' months ago and ending 'lag' months ago.
+    
+    Args:
+        lag (int): The number of months lag.
+    
+    Returns:
+        float: Percent change in CPI.
+    """
+    new = mycpi[lag]
+    old = mycpi[12 + lag]
+    change = (new / old - 1) * 100
+    return change
+</code>
+        </pre>
                 </article>
             </div>
 
