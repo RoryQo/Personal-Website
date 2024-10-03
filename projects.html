@@ -30,52 +30,56 @@
         <div class="content-wrapper">
             <article>
                 <h3>Tuition Variation Model, Undergraduate Research Capstone</h3>
-                <p><strong>Project Summary:</strong> Developed a predictive model in R to analyze tuition rates for public and private universities in the U.S., utilizing various metrics to explain tuition variability.</p>
-                <p><strong>Technologies Used:</strong> R, Linear Regression, Data Visualization</p>
+                <p><strong>Project Summary:</strong> Developed a predictive model to analyze tuition rates for public and private four-year universities in the U.S.</p>
+                <p><strong>Technologies Used:</strong> R, Linear Regression, Data Visualization, dplyr, ggplot2</p>
                 <p><strong>Detailed Description:</strong></p>
                 <ul>
-                    <li><strong>Problem Statement:</strong> Understanding the factors that influence tuition rates across different universities.</li>
-                    <li><strong>Solution:</strong> Created a linear regression model to predict tuition variability.</li>
+                    <li><strong>Problem Statement:</strong> Understanding the factors that contribute to variability in tuition rates across institutions.</li>
+                    <li><strong>Solution:</strong> Created a model that accounts for various metrics influencing tuition variability.</li>
                     <li><strong>Process:</strong>
                         <ul>
-                            <li>Collected data from three public datasets, focusing on 60 universities across the U.S.</li>
-                            <li>Conducted data wrangling to clean and prepare datasets, including addressing missing values and ensuring appropriate variable encoding.</li>
-                            <li>Explored institutional, quality of life, and crime metrics to understand their relationship with tuition rates.</li>
-                            <li>Constructed a comprehensive linear regression model and validated its predictive capabilities using leave-one-out cross-validation (LOOCV).</li>
-                            <li>Applied the model to analyze the University of Pittsburgh, highlighting the financial impact on out-of-state students.</li>
+                            <li>Collected data from three public datasets covering 60 observations from top U.S. universities.</li>
+                            <li>Conducted thorough data wrangling to clean and prepare datasets, addressing missing values and ensuring appropriate variable encoding.</li>
+                            <li>Constructed a comprehensive linear regression model, employing leave-one-out cross-validation (LOOCV) to validate predictive capabilities.</li>
+                            <li>Applied the model to the University of Pittsburgh, revealing insights into out-of-state tuition rates.</li>
+                            <li>Ensured robustness of the model by testing it across various subsets of data, confirming consistent performance and predictive accuracy.</li>
                         </ul>
                     </li>
                 </ul>
-                <p><strong>Results and Impact:</strong> Achieved over 85% of variability in tuition rates accounted for, identifying national ranking as a significant predictor.</p>
-                <p><strong>Challenges Faced:</strong> Managed data quality issues during collection and cleaning.</p>
-                <p><strong>Future Improvements:</strong> Explore the inclusion of additional factors like financial aid offerings.</p>
+                <p><strong>Results and Impact:</strong> 
+                    The model achieved over 85% of variability in tuition rates accounted for, demonstrating its effectiveness in explaining tuition differences. 
+                    National ranking was identified as the most significant predictor, illustrating that prestigious institutions leverage their rankings to justify higher tuition. 
+                    The findings provided actionable insights for prospective students, helping them assess the potential return on investment for their educational choices. 
+                    Furthermore, the model's robustness across various datasets supports its reliability in real-world applications, making it a valuable tool for students and policymakers alike.
+                </p>
+                <p><strong>Challenges Faced:</strong> Navigating the complexities of data collection and ensuring model robustness.</p>
+                <p><strong>Future Improvements:</strong> Expand the dataset to include additional universities and factors.</p>
                 <div class="button-container">
-                    <a href="https://github.com/RoryQo/R-Tuition-Variation-Research" class="button" target="_blank">View on GitHub</a>
                     <a href="https://github.com/RoryQo/Personal-Website/raw/main/Paying%20for%20Prestige.pdf" class="button" download>Download Full Research Paper</a>
+                    <a href="https://github.com/RoryQo/R-Tuition-Variation-Research" class="button" target="_blank">View on GitHub</a>
                 </div>
             </article>
 
             <article>
                 <h3>Navigating Inflation: A Custom CPI Analysis for College Students, Course Research Capstone</h3>
-                <p><strong>Project Summary:</strong> Analyzed the Consumer Price Index (CPI) for college students, creating a custom CPI calculation based on essential products and services.</p>
-                <p><strong>Technologies Used:</strong> Python, pandas, numpy</p>
+                <p><strong>Project Summary:</strong> Analyzed the Consumer Price Index (CPI) specifically for college students.</p>
+                <p><strong>Technologies Used:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn</p>
                 <p><strong>Detailed Description:</strong></p>
                 <ul>
-                    <li><strong>Problem Statement:</strong> Traditional CPI does not accurately reflect college students' consumption patterns.</li>
-                    <li><strong>Solution:</strong> Developed a custom CPI to better reflect the costs that impact students.</li>
+                    <li><strong>Problem Statement:</strong> Assessing inflation rates that specifically affect college students.</li>
+                    <li><strong>Solution:</strong> Developed a custom CPI calculation based on essential products and services.</li>
                     <li><strong>Process:</strong>
                         <ul>
-                            <li>Collected price data through API retrieval for essential products and services in three U.S. regions over a five-year period (January 2017 to January 2022).</li>
-                            <li>Calculated weighted averages for each product category based on student consumption patterns.</li>
-                            <li>Implemented functions to compute inflation rates using the custom CPI, enabling analysis of price changes over time.</li>
-                            <li>Conducted a comparative analysis to highlight significant trends in inflation affecting college students.</li>
-                            <li>Developed visualizations to illustrate inflation rates of the custom CPI against the general CPI across different lag periods.</li>
+                            <li>Collected price data through API retrieval for three regions (Northeast, Midwest, South) over five years.</li>
+                            <li>Implemented functions to calculate inflation rates based on the custom CPI.</li>
+                            <li>Conducted a comparative analysis highlighting trends in essential items like gas, recreation, and rent.</li>
+                            <li>Created visualizations to emphasize the differences in CPI for students compared to the general population.</li>
                         </ul>
                     </li>
                 </ul>
-                <p><strong>Results and Impact:</strong> Highlighted significant inflation trends affecting college students, particularly in essential categories.</p>
-                <p><strong>Challenges Faced:</strong> Encountered limitations with data availability for specific items.</p>
-                <p><strong>Future Improvements:</strong> Consider expanding the analysis to include more product categories and regions.</p>
+                <p><strong>Results and Impact:</strong> Highlighted significant inflation trends affecting college students, providing insights for financial planning.</p>
+                <p><strong>Challenges Faced:</strong> Ensuring accurate data collection and analysis across regions.</p>
+                <p><strong>Future Improvements:</strong> Incorporate real-time data for more dynamic assessments.</p>
                 <div class="button-container">
                     <a href="https://github.com/RoryQo/Create-a-CPI-Mini-Research" class="button" target="_blank">View on GitHub</a>
                 </div>
@@ -84,22 +88,22 @@
             <article>
                 <h3>Age Correlation in Married Couples, Bayesian Analysis Project</h3>
                 <p><strong>Project Summary:</strong> Analyzed the relationship between the ages of husbands and wives using data from 100 sampled U.S. married couples.</p>
-                <p><strong>Technologies Used:</strong> R, Bayesian Analysis, MCMC</p>
+                <p><strong>Technologies Used:</strong> R, Bayesian Analysis, MCMC, ggplot2</p>
                 <p><strong>Detailed Description:</strong></p>
                 <ul>
-                    <li><strong>Problem Statement:</strong> Understanding age dynamics in marriages.</li>
-                    <li><strong>Solution:</strong> Utilized Bayesian methods to analyze age correlation.</li>
+                    <li><strong>Problem Statement:</strong> Traditional methods offer wide confidence intervals due to limited data. By utilizing Bayesian methods, we aimed to reduce these intervals through the generation of additional predictive datasets.</li>
+                    <li><strong>Solution:</strong> Employed Bayesian methods to analyze age correlation, providing more precise estimates.</li>
                     <li><strong>Process:</strong>
                         <ul>
                             <li>Gathered data from a sample of 100 married couples, recording their ages.</li>
-                            <li>Explored various distributions to determine the best fit for age data.</li>
-                            <li>Generated predictive datasets through random sampling from established distributions, confirming a strong positive correlation between ages.</li>
-                            <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient.</li>
-                            <li>Created confidence intervals for both estimates, demonstrating the advantages of Bayesian methods over traditional approaches.</li>
+                            <li>Hypothesized distributions for the variance using the Inverse-Wishart distribution and for the mean using the Multivariate Normal distribution.</li>
+                            <li>Generated predictive datasets through random sampling from established distributions, confirming our hypotheses as the scatter plots of the predictive datasets exhibited the same relationship between the variables as the original data.</li>
+                            <li>Employed Markov Chain Monte Carlo (MCMC) methods to estimate mean ages and the correlation coefficient, creating new confidence intervals for both.</li>
+                            <li>Demonstrated that the Bayesian approach provided narrower confidence intervals for average ages compared to frequentist methods, utilizing the additional data generated.</li>
                         </ul>
                     </li>
                 </ul>
-                <p><strong>Results and Impact:</strong> Demonstrated narrower confidence intervals using Bayesian methods, showcasing their effectiveness.</p>
+                <p><strong>Results and Impact:</strong> Demonstrated narrower confidence intervals using Bayesian methods, showcasing their effectiveness in data-scarce scenarios.</p>
                 <p><strong>Challenges Faced:</strong> Required a solid understanding of Bayesian statistics for accurate implementation.</p>
                 <p><strong>Future Improvements:</strong> Explore larger datasets for broader analysis.</p>
                 <div class="button-container">
@@ -109,25 +113,24 @@
 
             <article>
                 <h3>Country Needs Assessment for Humanitarian Aid, Data Science Mini Project</h3>
-                <p><strong>Project Summary:</strong> Analyzed socio-economic and health indicators to identify countries most in need of humanitarian assistance.</p>
-                <p><strong>Technologies Used:</strong> R, PCA, Clustering</p>
+                <p><strong>Project Summary:</strong> Analyzed socio-economic and health indicators to categorize countries most in need of humanitarian assistance for NGOs.</p>
+                <p><strong>Technologies Used:</strong> R, PCA, Clustering Techniques, dplyr, ggplot2</p>
                 <p><strong>Detailed Description:</strong></p>
                 <ul>
-                    <li><strong>Problem Statement:</strong> Assessing humanitarian needs based on various indicators.</li>
-                    <li><strong>Solution:</strong> Used PCA and clustering to categorize countries by urgency of aid.</li>
+                    <li><strong>Problem Statement:</strong> Identifying countries requiring urgent humanitarian assistance based on various indicators.</li>
+                    <li><strong>Solution:</strong> Conducted a comprehensive analysis to categorize countries based on socio-economic and health data.</li>
                     <li><strong>Process:</strong>
                         <ul>
-                            <li>Collected data on socio-economic and health indicators from reliable sources.</li>
-                            <li>Conducted correlation analysis to identify key factors affecting country development, such as child mortality and income levels.</li>
-                            <li>Applied Principal Component Analysis (PCA) to reduce dimensionality and extract significant features from the dataset.</li>
-                            <li>Determined three optimal clusters using clustering techniques, comparing the effectiveness of Partitioning Around Medoids (PAM) with K-means.</li>
-                            <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities.</li>
+                            <li>Performed correlation analysis to identify key factors affecting country development.</li>
+                            <li>Utilized Principal Component Analysis (PCA) to reduce dimensionality of the dataset.</li>
+                            <li>Applied clustering techniques to categorize countries, finding that Partitioning Around Medoids (PAM) outperformed K-means.</li>
+                            <li>Created visualizations to compare key factors across clusters, effectively illustrating disparities and underscoring the need for targeted interventions.</li>
                         </ul>
                     </li>
                 </ul>
-                <p><strong>Results and Impact:</strong> Identified 51 countries in Cluster 1 with urgent needs for intervention.</p>
-                <p><strong>Challenges Faced:</strong> Data availability and reliability were critical factors.</p>
-                <p><strong>Future Improvements:</strong> Incorporate real-time data for more dynamic assessments.</p>
+                <p><strong>Results and Impact:</strong> Identified countries most in need of humanitarian aid, aiding NGOs in prioritizing interventions.</p>
+                <p><strong>Challenges Faced:</strong> Managing and cleaning large datasets for effective analysis.</p>
+                <p><strong>Future Improvements:</strong> Expand analysis to include additional socio-economic factors.</p>
                 <div class="button-container">
                     <a href="https://github.com/RoryQo/R-Country-Needs-Assessment-for-Humanitarian-Aid-Mini-Project" class="button" target="_blank">View on GitHub</a>
                 </div>
@@ -136,24 +139,23 @@
             <article>
                 <h3>Credit Risk Assessment Model, Data Science Project</h3>
                 <p><strong>Project Summary:</strong> Analyzed customer attributes to predict credit risk using logistic regression.</p>
-                <p><strong>Technologies Used:</strong> Python, Logistic Regression, Data Visualization</p>
+                <p><strong>Technologies Used:</strong> Python, Scikit-learn, Data Visualization</p>
                 <p><strong>Detailed Description:</strong></p>
                 <ul>
-                    <li><strong>Problem Statement:</strong> Efficiently assessing potential credit risks for banks.</li>
-                    <li><strong>Solution:</strong> Developed a logistic regression model to predict credit risk.</li>
+                    <li><strong>Problem Statement:</strong> Enhancing banks' ability to assess potential credit risks efficiently.</li>
+                    <li><strong>Solution:</strong> Developed a predictive model for credit risk assessment.</li>
                     <li><strong>Process:</strong>
                         <ul>
-                            <li>Managed data preprocessing, addressing missing values and converting categorical variables into dummy variables.</li>
-                            <li>Explored relationships between various customer attributes, such as age, gender, and income.</li>
-                            <li>Built a comprehensive logistic regression model, achieving approximately 78% accuracy in predicting credit risk.</li>
-                            <li>Utilized visualizations like pie charts and scatterplots to understand risk distributions and relationships among variables.</li>
-                            <li>Implemented a workflow using Python libraries such as pandas and scikit-learn for exploratory data analysis and model training.</li>
+                            <li>Managed data preprocessing, including handling missing values and converting categorical variables.</li>
+                            <li>Developed a logistic regression model achieving approximately 78% accuracy.</li>
+                            <li>Utilized features such as age, gender, job type, and credit amount for model training.</li>
+                            <li>Created visualizations to understand credit risk distributions and relationships among variables.</li>
                         </ul>
                     </li>
                 </ul>
-                <p><strong>Results and Impact:</strong> Enabled early identification of high-risk customers, enhancing lending decisions.</p>
-                <p><strong>Challenges Faced:</strong> Balancing model accuracy with interpretability for stakeholders.</p>
-                <p><strong>Future Improvements:</strong> Explore alternative modeling techniques for enhanced accuracy.</p>
+                <p><strong>Results and Impact:</strong> Enabled early identification of high-risk customers, improving credit assessment efficiency.</p>
+                <p><strong>Challenges Faced:</strong> Ensuring model robustness amidst varying data quality.</p>
+                <p><strong>Future Improvements:</strong> Explore more advanced machine learning techniques for better accuracy.</p>
                 <div class="button-container">
                     <a href="https://github.com/RoryQo/Credit-Risk-Assesment-Mini-Project" class="button" target="_blank">View on GitHub</a>
                 </div>
@@ -161,31 +163,30 @@
 
             <article>
                 <h3>Students' Adaptability to Online Learning, Data Science Project</h3>
-                <p><strong>Project Summary:</strong> Investigated students' adaptability to online learning using machine learning techniques.</p>
-                <p><strong>Technologies Used:</strong> Python, TensorFlow, Machine Learning, Data Visualization</p>
+                <p><strong>Project Summary:</strong> Investigated students' adaptability to online learning through data analysis and machine learning techniques.</p>
+                <p><strong>Technologies Used:</strong> Python, Scikit-learn, Data Visualization</p>
                 <p><strong>Detailed Description:</strong></p>
                 <ul>
-                    <li><strong>Problem Statement:</strong> Understanding factors influencing students' adaptability in online settings.</li>
-                    <li><strong>Solution:</strong> Developed predictive models to analyze adaptability levels.</li>
+                    <li><strong>Problem Statement:</strong> Understanding factors influencing students' adaptability to online learning environments.</li>
+                    <li><strong>Solution:</strong> Analyzed demographic and performance data to predict adaptability levels.</li>
                     <li><strong>Process:</strong>
                         <ul>
-                            <li>Collected data from students regarding their experiences and challenges in online learning environments.</li>
-                            <li>Applied data wrangling techniques to prepare the dataset for analysis, including encoding categorical variables and scaling features.</li>
-                            <li>Utilized advanced machine learning models, including TensorFlow, Support Vector Machine (SVM), and Random Forest, achieving approximately 93% accuracy in predictions.</li>
-                            <li>Identified significant factors influencing adaptability, such as age, class duration, gender, and education level.</li>
-                            <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors, enhancing understanding of student adaptability.</li>
+                            <li>Applied data wrangling, visualization, and machine learning techniques to analyze key factors.</li>
+                            <li>Achieved approximately 93% accuracy in predicting adaptability using advanced models.</li>
+                            <li>Identified significant factors influencing adaptability, such as age and education level.</li>
+                            <li>Prepared data through feature scaling and hyperparameter tuning to optimize model performance.</li>
                         </ul>
                     </li>
                 </ul>
-                <p><strong>Results and Impact:</strong> Identified key factors affecting adaptability, aiding educators in addressing challenges.</p>
-                <p><strong>Challenges Faced:</strong> Balancing model complexity with interpretability.</p>
-                <p><strong>Future Improvements:</strong> Expand the dataset for more diverse insights.</p>
+                <p><strong>Results and Impact:</strong> Provided insights into the factors that enhance or hinder student adaptability to online learning.</p>
+                <p><strong>Challenges Faced:</strong> Managing data variability and ensuring model robustness.</p>
+                <p><strong>Future Improvements:</strong> Incorporate feedback from students for a more comprehensive analysis.</p>
                 <div class="button-container">
                     <a href="https://github.com/RoryQo/Student-Online-Learning-Adaptability-Project" class="button" target="_blank">View on GitHub</a>
                 </div>
             </article>
         </div>
-        <a href="index.html">Back to Home</a>
     </div>
+    <a href="index.html">Back to Home</a>
 </body>
 </html>
