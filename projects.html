@@ -6,13 +6,42 @@
     <title>Projects - Rory Quinlan's Resume</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-       
         img {
             transition: transform 0.3s ease; /* Smooth transition */
         }
 
         img:hover {
             transform: scale(1.25); /* Enlarge on hover */
+        }
+
+        /* Styles for the buttons container */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping to a new line if necessary */
+            justify-content: flex-start; /* Aligns buttons to the left */
+            background-color: white; 
+            padding: 10px; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Individual button styles */
+        .button {
+            padding: 10px 15px; 
+            margin: 5px; /* Reduced margin for closer spacing */
+            background-color: #003366; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            transition: background-color 0.3s; /* Smooth background color change */
+        }
+
+        .button:hover {
+            background-color: #0055a5; /* Darker shade on hover */
         }
     </style>
 </head>
@@ -38,16 +67,17 @@
     <div class="section" id="projects">
        <h2>PROJECTS</h2>
         
-   <div style="background-color: white; padding: 10px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
-        <button onclick="location.href='#tuition-variation'" style="padding: 10px 15px; margin-right: 10px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Tuition Variation Model</button>
-        <button onclick="location.href='#cpi-analysis'" style="padding: 10px 15px; margin-right: 10px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Navigating Inflation: CPI Analysis</button>
-        <button onclick="location.href='#age-correlation'" style="padding: 10px 15px; margin-right: 10px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Age Correlation in Married Couples</button>
-        <button onclick="location.href='#humanitarian-aid'" style="padding: 10px 15px; margin-right: 10px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Country Needs Assessment</button>
-        <button onclick="location.href='#credit-risk'" style="padding: 10px 15px; margin-right: 10px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Credit Risk Assessment</button>
-        <button onclick="location.href='#online-learning'" style="padding: 10px 15px; margin-right: 10px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Students' Adaptability to Online Learning</button>
-        <button onclick="location.href='#lit-review'" style="padding: 10px 15px; margin-right: 10px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Literature Review</button>
-   </div>
-    <div class="content-wrapper">
+        <div class="button-container">
+            <button class="button" onclick="location.href='#tuition-variation'">Tuition Variation Model</button>
+            <button class="button" onclick="location.href='#cpi-analysis'">Navigating Inflation: CPI Analysis</button>
+            <button class="button" onclick="location.href='#age-correlation'">Age Correlation in Married Couples</button>
+            <button class="button" onclick="location.href='#humanitarian-aid'">Country Needs Assessment</button>
+            <button class="button" onclick="location.href='#credit-risk'">Credit Risk Assessment</button>
+            <button class="button" onclick="location.href='#online-learning'">Students' Adaptability to Online Learning</button>
+            <button class="button" onclick="location.href='#lit-review'">Literature Review</button>
+        </div>
+
+        <div class="content-wrapper">
     </ul>
         <div class="content-wrapper">
 
@@ -317,7 +347,7 @@ best_k = classifier.best_estimator_.get_params()["knn__n_neighbors"]
      <h3>Literature Review on the Economic Impact of Terrorism</h3>
     <p><strong>Project Summary:</strong> This review analyzes the economic effects of terrorism, focusing on its influence on business performance and GDP growth across various sectors and regions.</p>
 
-    <p><strong>Key Findings</strong></p>
+    <p><strong>Key Findings:</strong></p>
     <ul>
         <li><strong>Economic Declines:</strong> Terrorism leads to significant decreases in revenues and GDP. For instance, Bayter (2021) reported a 2% to 4% annual revenue drop in France for three years post-attacks, while Abadie and Gardeazabal (2003) noted a 10% decline in GDP per capita in the Basque Country.</li>
 
