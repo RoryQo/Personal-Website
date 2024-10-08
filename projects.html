@@ -355,11 +355,11 @@ best_k = classifier.best_estimator_.get_params()["knn__n_neighbors"]
 
    <li><p><strong>Process:</p></li></strong>
     <ul>
-        <li>Data was collected and loaded, separating students into groups based on the app they used.</li>
-        <li>Descriptive statistics were calculated to summarize final exam scores and study hours.</li>
-        <li>Boxplots and scatterplots were created to visualize the data and identify trends.</li>
-        <li>ANCOVA was employed to assess the effects of the apps while adjusting for hours studied.</li>
-        <li>The appropriateness of ANCOVA was checked by evaluating interaction terms.</li>
+        <li><strong>Group Segmentation</strong>: Separated students into distinct categories based on the language learning application used (Duolingo and Anki).</li>
+    <li><strong>ANCOVA Setup</strong>: Formulated an ANCOVA model to assess the impact of the apps on exam scores while adjusting for study hours.</li>
+    <li><strong>Interaction Term Evaluation</strong>: Analyzed interaction terms in the ANCOVA model to verify their significance, concluding that the interaction between app type and study hours was not statistically significant.</li>
+    <li><strong>Model Comparison</strong>: Conducted ANOVA tests to compare the full ANCOVA model with a reduced model, ensuring the appropriateness of the chosen analytical approach.</li>
+    <li><strong>Adjusted Means Analysis</strong>: Evaluated the equality of adjusted means for final exam scores between the two groups, confirming significant performance differences favoring Duolingo.</li>
     </ul>
     </ul>
 
@@ -369,6 +369,9 @@ best_k = classifier.best_estimator_.get_params()["knn__n_neighbors"]
 
     <p><strong>Future Improvements:</strong> Future research could explore additional factors such as user preferences and engagement metrics to provide deeper insights into language learning effectiveness.</p>
 </article>
+           <div style="display: flex; justify-content: center; align-items: center; margin-left: 15px;">
+                <img src="https://raw.githubusercontent.com/RoryQo/Personal-Website/main/p1.jpg" alt="Tuition Variation Model" style="width: 475px; height: auto; margin-left: 15px; border: 2px solid #003366; border-radius: 5px;">
+            </div>  
 </div>
          </div>
 
