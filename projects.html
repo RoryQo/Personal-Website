@@ -44,7 +44,7 @@
         <button onclick="location.href='#age-correlation'" style="padding: 10px 15px; margin-right: 6px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12.9px;">Age Correlation in Married Couples</button>
         <button onclick="location.href='#country-needs-assessment'" style="padding: 10px 15px; margin-right: 6px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12.9px;">Country Needs Assessment</button>
         <button onclick="location.href='#credit-risk'" style="padding: 10px 15px; margin-right: 6px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12.9px;">Credit Risk Assessment</button>
-        <button onclick="location.href='#online-learning'" style="padding: 10px 15px; margin-right: 6px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12.9px;">Students' Adaptability to Online Learning</button>
+        <button onclick="location.href='#migration-research-replication'" style="padding: 10px 15px; margin-right: 6px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12.9px;">Migration RCT</button>
         <button onclick="location.href='#health-risk-housing'" style="padding: 10px 15px; margin-right: 6px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12.9px;">Health Risk on Housing Prices</button>
        <button onclick="location.href='#lit-review'" style="padding: 10px 15px; margin-right: 6px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12.9px;">Literature Review</button>
    </div>
@@ -263,49 +263,35 @@ for(i in 1:s){
                 <img src="https://raw.githubusercontent.com/RoryQo/Personal-Website/main/Risk.jpg" alt="Credit Risk Assessment" style="width: 475px; height: auto; margin-left: 15px; border: 2px solid #003366; border-radius: 5px;">
             </div>
 
-            <div class="project-box" id="online-learning"style="background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 8px; padding: 15px; margin-bottom: 20px; display: flex;">
+         <div class="project-box" id="migration-research-replication" style="background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 8px; padding: 15px; margin-bottom: 20px; display: flex;">
     <article style="flex: 1; margin-right: 15px;">
-                    <h3>Students' Adaptability to Online Learning, Data Science Project</h3>
-                    <p><strong>Project Summary:</strong> Investigated students' adaptability to online learning using machine learning techniques.</p>
-                    <p><strong>Technologies Used:</strong> Python, TensorFlow, Grid Search for Hyperparameter Tuning, Matplotlib/Seaborn</p>
-                    <p><strong>Detailed Description:</strong></p>
-                    <ul>
-                        <li><strong>Problem Statement:</strong> Understanding factors influencing students' adaptability in online settings.</li>
-                        <li><strong>Solution:</strong> Developed predictive models to analyze adaptability levels.</li>
-                        <li><strong>Process:</strong>
-                            <ul>
-                                <li>Applied data wrangling techniques to prepare the dataset for analysis, including encoding categorical variables and scaling features.</li>
-                                <li>Utilized advanced machine learning models, including Support Vector Machine (SVM) and Random Forest, achieving approximately<br>93% accuracy in predictions.</li>
-                                <li>Conducted feature selection to identify significant factors influencing adaptability, such as age, class duration, gender, and education level.</li>
-                                <li>Utilized grid search to fine-tune model parameters for optimal performance.</li>
-                                <li>Developed and validated predictive models to analyze students' adaptability to online learning environments.</li>
-                                <li>Created insightful visualizations using Python libraries to analyze distributions and relationships among demographic factors.</li>
-                                
-                        
-                    </ul>
-                    <p><strong>Results and Impact:</strong> Identified key factors affecting adaptability, aiding educators in addressing challenges.</p>
-                    <p><strong>Challenges Faced:</strong>Simpler models yielded insufficient accuracy.</p>
-                    <p><strong>Future Improvements:</strong> Expand the dataset for more diverse insights.</p>
-                    <div class="button-container">
-                        <a href="https://github.com/RoryQo/Student-Online-Learning-Adaptability-Project" class="button" target="_blank">View on GitHub</a>
-                    </div>
-                </article>
-                <div style="width: 500px; margin-left: 15px; display: flex; flex-direction: column;">
-        <h4>Code Snippet:</h4>
-        <div style="background-color: #f8f8f8; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-<code>
-# Consider 10 different values of K<br>
-search_space = [{"knn__n_neighbors": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}]<br>
-<br>
-# Create search with parameters and set 5 fold cross validation<br>
-classifier = GridSearchCV(<br>
-    pipe, search_space, cv=5, verbose=0).fit(X_train, y_train)<br>
-<br>
-# Calculate best estimator<br>
-best_k = classifier.best_estimator_.get_params()["knn__n_neighbors"]
+        <h3>Research Replication: Migration</h3>
+        <p><strong>Project Summary:</strong> Replicated Bryan et al. (2014) analysis on seasonal migration's impact on household consumption in rural Bangladesh, using R to estimate treatment effects and causal relationships.</p>
+        <p><strong>Technologies Used:</strong> R, Regression Analysis, Instrumental Variables, Fixed Effects, dplyr, RCT</p>
+        <p><strong>Detailed Description:</strong></p>
+        <ul>
+            <li><strong>Problem Statement:</strong> Investigate how seasonal migration subsidies impact household consumption during the lean season.</li>
+            <li><strong>Solution:</strong> Replicated the randomized control trial (RCT) analysis using R to estimate treatment effects on migration and consumption, and apply an instrumental variable approach to isolate causal effects.</li>
+            <li><strong>Process:</strong>
+                <ul>
+                    <li>Loaded and merged data from two rounds of household surveys (pre- and post-treatment).</li>
+                    <li>Conducted regression analysis to estimate the intention-to-treat (ITT) effects on baseline outcomes like savings and caloric intake.</li>
+                    <li>Performed first-stage regression to examine the impact of the treatment on migration.</li>
+                    <li>Estimated the effect of treatment on household consumption using a reduced form regression.</li>
+                    <li>Used an instrumental variable (IV) approach to estimate the Local Average Treatment Effect (LATE) of migration on consumption.</li>
+                </ul>
+            </li>
+        </ul>
+        <p><strong>Results and Impact:</strong> The LATE estimates revealed that migration induced by the treatment increased household consumption by approximately 374 takka, offering insights into the potential for migration subsidies to improve welfare in rural areas.</p>
+        <p><strong>Challenges Faced:</strong> Addressed issues of endogeneity by using treatment as an instrument for migration.</p>
+        <div class="button-container">
+            <a href="https://github.com/RoryQo/Migration-Research-Replication" class="button" target="_blank">View on GitHub</a>
+        </div>
+    </article>
+    <div style="display: flex; justify-content: center; align-items: center; margin-left: 15px;">
+        <img src="https://raw.githubusercontent.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/main/Figures/Table1.jpg" alt="Migration Research Replication" style="width: 475px; height: auto; margin-left: 15px; border: 2px solid #003366; border-radius: 5px;">
     
-</code>
-        </pre>
+               
     </div>
             </div>
 </div>
@@ -336,7 +322,7 @@ best_k = classifier.best_estimator_.get_params()["knn__n_neighbors"]
         </div>
     </article>
     <div style="display: flex; justify-content: center; align-items: center; margin-left: 15px;">
-        <img src="https://raw.githubusercontent.com/RoryQo/Research-Reproduction_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/AVGHousePrice.jpg" alt="Health Risk Housing" style="width: 475px; height: auto; margin-left: 15px; border: 2px solid #003366; border-radius: 5px;">
+        <img src="https://raw.githubusercontent.com/RoryQo/Research-Reproduction_Effect-of-Health-Risk-on-Housing-Prices/main/Figures/AVGHousePrice.jpg" alt="Health Risk Housing" style="width: 475px; height: auto; margin-left: 15px; border: 2px solid #003366; border-radius: 5px;">
     
             </div>  
 </div>
